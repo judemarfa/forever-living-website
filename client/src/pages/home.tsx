@@ -162,8 +162,8 @@ export default function Home() {
                 <button onClick={() => window.open('https://thealoeveraco.shop/uUbSDBAr', '_blank')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   Nutrition
                 </button>
-                <button onClick={() => scrollToSection('shop')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
-                  Shop
+                <button onClick={() => window.open('https://thealoeveraco.shop/stxyuA54', '_blank')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  ImmuneHealth
                 </button>
                 <button onClick={() => scrollToSection('contact')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   Contact
@@ -201,8 +201,8 @@ export default function Home() {
               <button onClick={() => window.open('https://thealoeveraco.shop/uUbSDBAr', '_blank')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 Nutrition
               </button>
-              <button onClick={() => scrollToSection('shop')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
-                Shop
+              <button onClick={() => window.open('https://thealoeveraco.shop/stxyuA54', '_blank')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                ImmuneHealth
               </button>
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 Contact
