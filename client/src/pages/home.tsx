@@ -74,7 +74,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-    }, 4000); // Change slide every 4 seconds
+    }, 8000); // Change slide every 8 seconds
     
     return () => clearInterval(timer);
   }, [carouselImages.length]);
