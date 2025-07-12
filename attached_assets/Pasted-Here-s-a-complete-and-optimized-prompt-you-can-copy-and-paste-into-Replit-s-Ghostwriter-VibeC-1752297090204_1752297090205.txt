@@ -1,0 +1,71 @@
+Here’s a **complete and optimized prompt** you can copy and paste into **Replit's Ghostwriter (VibeCode)** to generate a **static landing page website** for your **Forever Living Products business**, ready to host on **GitHub Pages**:
+
+---
+
+**🎯 Prompt for Replit Ghostwriter / VibeCode:**
+
+> Create a static HTML, CSS, and minimal JavaScript website for an independent network marketing agent.
+>
+> The business represents **Forever Living Products**, a health and wellness company. The agent is not employed by the corporate side, but has achieved **manager rank** in the network marketing side.
+>
+> The website should serve as a **landing page** and include:
+>
+> ### Page Structure:
+>
+> 1. **Hero Section**:
+>
+>    * Inspirational headline: “Health is the First Wealth”
+>    * Subheadline: “Empowering wellness through nature’s best – Aloe Vera & Omega-3”
+>    * A background image or solid soothing color (green/white tones)
+>    * Call-to-action button: “Shop Now” that links to my replicated Forever Living page (placeholder URL).
+> 2. **About Section**:
+>
+>    * Short bio about me as a Forever Living manager-ranked independent agent.
+>    * Emphasize the nature-based, preservative-free process of Forever’s Aloe Vera products and the benefits of network marketing income streams.
+> 3. **Featured Products Section**:
+>
+>    * **Aloe Vera Drink**:
+>
+>      * Ancient history from Egyptian times.
+>      * Health benefits: gut health, hydration, immune support, natural detox.
+>    * **Artic Sea Omega-3 Supplement**:
+>
+>      * Heart health support.
+>      * Importance of maintaining cardiovascular health.
+>      * Mention it's a “silent killer” if ignored (based on medical insight).
+>    * Include product images (use placeholder images or public URLs).
+> 4. **Gallery or Product Images Section**:
+>
+>    * Showcase Forever Living Products (use placeholders or example product thumbnails).
+> 5. **Shop Section**:
+>
+>    * A link/button: “Visit Full Store & Order Now”
+>    * This should link to the replicated site (e.g., `https://shop.foreverliving.com/rep/your-id`)
+>    * Mention: “Secure ordering, payment, and direct shipping available.”
+>
+> ### Design Guidelines:
+>
+> * Clean, professional layout
+> * Mobile-responsive
+> * Use natural, wellness-inspired colors (green, beige, white)
+> * Minimal animations or transitions
+>
+> ### Output Format:
+>
+> * Single folder with `index.html`, `styles.css`, and optionally `script.js`
+> * No backend code, fully static
+> * Easy to host on GitHub Pages
+>
+> Add comments in the code so I can easily customize links and images.
+
+---
+
+### ✅ What to do after:
+
+Once you have this code, you can:
+
+* Edit the placeholder product images and your replicated store link
+* Push it to a GitHub repository
+* Enable GitHub Pages in the repository settings
+
+Would you like me to create a ready-made version of this for you right now (code included)?
