@@ -188,7 +188,7 @@ export default function Home() {
           {/* Call to Action */}
           <div className="mb-8 animate-fadeInUp">
             <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-4 mb-6 animate-pulse">
-              <p className="text-white text-lg font-semibold mb-2">🔥 Limited Time Offer!</p>
+              <p className="text-white text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
               <p className="text-cream text-sm">Get your premium wellness products now - Click the button below!</p>
             </div>
           </div>
@@ -578,7 +578,7 @@ export default function Home() {
           {/* Enhanced Call to Action */}
           <div className="text-center animate-on-scroll">
             <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-6 mb-8 animate-pulse">
-              <p className="text-white text-2xl font-bold mb-2">🌟 Shop Our #1 Best Seller!</p>
+              <p className="text-white text-2xl font-bold mb-2">🌟 15% discount on all orders</p>
               <p className="text-cream text-lg">Premium wellness products trusted by thousands</p>
             </div>
             
