@@ -608,6 +608,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* YouTube Channel Section */}
+      <section className="py-20 bg-gradient-to-br from-coral/10 to-gold/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center animate-on-scroll">
+            <div className="bg-gradient-to-r from-red-500 to-red-600 text-white p-8 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
+                <div className="bg-white/20 p-4 rounded-full mr-4">
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a2.999 2.999 0 0 0-2.112-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.386.505A2.999 2.999 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.999 2.999 0 0 0 2.112 2.136c1.881.505 9.386.505 9.386.505s7.505 0 9.386-.505a2.999 2.999 0 0 0 2.112-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                    judeHealthBiz Talk
+                  </h2>
+                  <p className="text-white/90 text-sm">
+                    Watch powerful health & wellness insights
+                  </p>
+                </div>
+              </div>
+              
+              <p className="text-lg mb-6 text-white/95">
+                Discover expert tips, product reviews, and wellness strategies on my YouTube channel. 
+                Get the latest updates on health supplements and business opportunities!
+              </p>
+              
+              <Button 
+                onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
+                className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 text-lg font-bold rounded-full transform hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a2.999 2.999 0 0 0-2.112-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.386.505A2.999 2.999 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.999 2.999 0 0 0 2.112 2.136c1.881.505 9.386.505 9.386.505s7.505 0 9.386-.505a2.999 2.999 0 0 0 2.112-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                Watch Videos
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Button>
+              
+              <div className="mt-6 text-sm text-white/80">
+                <p>🎥 Health tips • 📚 Product reviews • 💼 Business insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Shop Section */}
       <section id="shop" className="py-20 bg-forest text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
