@@ -150,6 +150,9 @@ export default function Home() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
+                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Home
+                </button>
                 <button onClick={() => scrollToSection('about')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   About
                 </button>
@@ -186,6 +189,9 @@ export default function Home() {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Home
+              </button>
               <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 About
               </button>

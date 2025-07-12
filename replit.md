@@ -114,3 +114,6 @@ The application serves as a digital storefront for a Forever Living Products man
 - Created custom "1stHealth" logo with colorful design and red/yellow outlines to replace FOREVER branding
 - Added recognition badge overlay to presentation image showcasing manager credentials
 - Updated navigation by removing Home tab and positioning About tab as first navigation item
+- Restored Home tab as first navigation item with smooth scroll to top functionality
+- Created carousel gallery with health education images above presentation photo
+- Fixed carousel transition issues and layering problems for clean image sliding
