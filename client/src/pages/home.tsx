@@ -36,6 +36,7 @@ import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
 import firstHealthLogo from "@/assets/1st-health-logo.svg";
 import recognitionBadge from "@/assets/recognition-badge.png";
+import foreverOpportunityImage from "@/assets/forever-opportunity.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -249,6 +250,18 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-forest mb-8 font-serif">
+              Your Trusted Wellness Partner
+            </h2>
+            <p className="text-xl text-gray-700 mb-6 leading-relaxed max-w-4xl mx-auto">
+              As a <strong>manager-ranked independent agent</strong> with Forever Living Products, I've dedicated my career to helping others achieve optimal wellness through nature's most powerful ingredients and also build a business.
+            </p>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+              Have the freedom to make your own schedule, work from anywhere and achieve what you desire.
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll relative">
               <img 
@@ -268,51 +281,40 @@ export default function Home() {
             </div>
             
             <div className="animate-on-scroll">
-              <div className="bg-gold text-white px-6 py-3 rounded-full inline-flex items-center mb-6">
-                <Award className="h-5 w-5 mr-2" />
-                <span className="font-semibold">Recognized Manager</span>
-              </div>
-              
-              <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
-                Your Trusted Wellness Partner
-              </h2>
-              
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                As a <strong>manager-ranked independent agent</strong> with Forever Living Products, I've dedicated my career to helping others achieve optimal wellness through nature's most powerful ingredients.
-              </p>
-              
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Forever Living's commitment to <strong>preservative-free, nature-based processes</strong> aligns perfectly with my belief that true health comes from pure, natural sources. Our Aloe Vera products represent the gold standard in wellness supplementation.
-              </p>
+              <img 
+                src={foreverOpportunityImage} 
+                alt="The Forever Opportunity - Build Your Business" 
+                className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
+              />
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                 <Card className="bg-white shadow-md">
                   <CardContent className="p-6">
                     <div className="text-gold text-2xl mb-2">
-                      <Users className="h-8 w-8" />
+                      <TrendingUp className="h-8 w-8" />
                     </div>
-                    <h3 className="font-semibold text-forest mb-2">Network Marketing Income</h3>
-                    <p className="text-gray-600 text-sm">Multiple income streams through proven business model</p>
+                    <h3 className="font-semibold text-forest mb-2">Earn Supplemental Income</h3>
+                    <p className="text-gray-600 text-sm">The harder you work, the more earning potential you have. Building a business takes commitment.</p>
                   </CardContent>
                 </Card>
                 
                 <Card className="bg-white shadow-md">
                   <CardContent className="p-6">
                     <div className="text-gold text-2xl mb-2">
-                      <Leaf className="h-8 w-8" />
+                      <Award className="h-8 w-8" />
                     </div>
-                    <h3 className="font-semibold text-forest mb-2">Pure Aloe Vera</h3>
-                    <p className="text-gray-600 text-sm">Preservative-free, nature-based wellness products</p>
+                    <h3 className="font-semibold text-forest mb-2">Qualify for Incentives</h3>
+                    <p className="text-gray-600 text-sm">Unlock your potential to earn bonuses and qualify to explore travel destinations.</p>
                   </CardContent>
                 </Card>
               </div>
               
               <Button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-forest hover:bg-green-800 text-white px-8 py-4 text-lg font-semibold inline-flex items-center"
+                onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
+                className="bg-forest text-white hover:bg-sage px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 Start Your Journey
-                <ExternalLink className="h-5 w-5 ml-2" />
+                <ExternalLink className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
