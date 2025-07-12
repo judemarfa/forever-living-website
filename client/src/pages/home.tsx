@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
+import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -261,8 +262,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional wellness consultant" 
+                src={antonioMarfaImage} 
+                alt="Antonio Marfa - Professional wellness consultant presenting at Forever Living Products event" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
             </div>
