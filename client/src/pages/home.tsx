@@ -428,37 +428,7 @@ export default function Home() {
       </section>
 
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
-              Ready to Transform Your Health?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Contact us today to start your wellness journey with Forever Living Products.
-            </p>
-          </div>
-          
-          <div className="max-w-md mx-auto text-center">
-            <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl">
-              <CardContent className="p-8">
-                <div className="flex items-center justify-center mb-6">
-                  <Mail className="h-6 w-6 text-sage mr-3" />
-                  <span className="text-lg font-semibold text-forest">judemarfa@gmail.com</span>
-                </div>
-                
-                <Button 
-                  onClick={() => window.location.href = 'mailto:judemarfa@gmail.com'}
-                  className="bg-sage hover:bg-green-600 text-white px-8 py-3 text-lg font-semibold"
-                >
-                  Contact Us Today
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+
 
     </div>
   );
