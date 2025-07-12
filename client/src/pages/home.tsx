@@ -291,17 +291,17 @@ export default function Home() {
             <div className="animate-on-scroll">
               {/* Carousel Gallery */}
               <div className="relative mb-8 bg-gradient-to-br from-sage/20 to-gold/20 p-4 rounded-2xl shadow-xl border-2 border-gold/30">
-                <div className="relative overflow-hidden rounded-xl">
+                <div className="relative overflow-hidden rounded-xl bg-gray-100">
                   <div 
-                    className="flex transition-transform duration-500 ease-in-out"
+                    className="flex transition-transform duration-700 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                   >
                     {carouselImages.map((image, index) => (
-                      <div key={index} className="w-full flex-shrink-0">
+                      <div key={index} className="w-full flex-shrink-0 relative">
                         <img 
                           src={image.src} 
                           alt={image.alt}
-                          className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-lg"
+                          className="w-full h-64 sm:h-80 object-contain rounded-xl shadow-lg bg-white"
                         />
                       </div>
                     ))}
