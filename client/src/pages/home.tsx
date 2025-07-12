@@ -359,9 +359,19 @@ export default function Home() {
                   As a <span className="text-coral font-bold text-xl">manager-ranked independent agent</span> with Forever Living Products, I've dedicated my career to helping others achieve <span className="text-forest font-bold">optimal wellness</span> through nature's most powerful ingredients and also <span className="text-gold font-bold text-lg">build a business</span>.
                 </p>
                 
-                <p className="text-base leading-tight font-semibold text-sage mb-3">
+                <p className="text-base leading-tight font-semibold text-sage mb-6">
                   Have the <span className="text-coral font-bold text-lg">freedom</span> to make your own schedule, work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-lg">desire</span>.
                 </p>
+                
+                <div className="text-center">
+                  <Button 
+                    onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
+                    className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+                  >
+                    🚀 Start Your Journey Today!
+                    <ExternalLink className="ml-3 h-6 w-6" />
+                  </Button>
+                </div>
               </div>
             </div>
             
