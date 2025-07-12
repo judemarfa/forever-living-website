@@ -251,7 +251,7 @@ export default function Home() {
               
               {/* Carousel */}
               <div className="relative mb-8">
-                <div className="overflow-hidden rounded-lg shadow-lg">
+                <div className="overflow-hidden rounded-lg shadow-lg relative">
                   <div 
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -265,6 +265,13 @@ export default function Home() {
                         />
                       </div>
                     ))}
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <img 
+                      src={recognitionBadge} 
+                      alt="Manager Recognition Badge" 
+                      className="w-16 h-16 object-contain"
+                    />
                   </div>
                 </div>
                 
@@ -288,13 +295,6 @@ export default function Home() {
                   alt="Antonio Marfa - Forever Living Products Manager" 
                   className="rounded-lg shadow-lg w-full h-80 object-cover"
                 />
-                <div className="absolute top-4 left-4">
-                  <img 
-                    src={recognitionBadge} 
-                    alt="Manager Recognition Badge" 
-                    className="w-16 h-16 object-contain"
-                  />
-                </div>
               </div>
 
               <p className="text-gray-600 mb-4 text-sm leading-tight">
