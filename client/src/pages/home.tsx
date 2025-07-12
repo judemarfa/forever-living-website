@@ -250,33 +250,41 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-forest mb-8 font-serif">
-              Your Trusted Wellness Partner
-            </h2>
-            <p className="text-xl text-gray-700 mb-6 leading-relaxed max-w-4xl mx-auto">
-              As a <strong>manager-ranked independent agent</strong> with Forever Living Products, I've dedicated my career to helping others achieve optimal wellness through nature's most powerful ingredients and also build a business.
-            </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-              Have the freedom to make your own schedule, work from anywhere and achieve what you desire.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-on-scroll relative">
-              <img 
-                src={antonioMarfaImage} 
-                alt="Antonio Marfa - Professional wellness consultant presenting at Forever Living Products event" 
-                className="rounded-2xl shadow-2xl w-full h-auto" 
-              />
-              
-              {/* Recognition badge overlay */}
-              <div className="absolute bottom-12 left-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="animate-on-scroll">
+              <div className="relative mb-8">
                 <img 
-                  src={recognitionBadge} 
-                  alt="Recognized Manager - Antonio Marfa" 
-                  className="w-60 h-auto opacity-95 shadow-lg rounded-lg"
+                  src={antonioMarfaImage} 
+                  alt="Antonio Marfa - Professional wellness consultant presenting at Forever Living Products event" 
+                  className="rounded-2xl shadow-2xl w-full h-auto" 
                 />
+                
+                {/* Recognition badge overlay */}
+                <div className="absolute bottom-12 left-4">
+                  <img 
+                    src={recognitionBadge} 
+                    alt="Recognized Manager - Antonio Marfa" 
+                    className="w-60 h-auto opacity-95 shadow-lg rounded-lg"
+                  />
+                </div>
+              </div>
+              
+              {/* Content below presentation image */}
+              <div className="bg-gradient-to-br from-gold/20 to-coral/20 p-8 rounded-2xl shadow-xl border-2 border-gold/30">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-serif bg-gradient-to-r from-forest via-sage to-gold bg-clip-text text-transparent">
+                  Your Trusted Wellness Partner
+                </h2>
+                
+                <p className="text-xl mb-6 leading-relaxed font-semibold">
+                  As a <span className="text-coral font-bold text-2xl">manager-ranked independent agent</span> with Forever Living Products, 
+                  I've dedicated my career to helping others achieve <span className="text-forest font-bold">optimal wellness</span> through 
+                  nature's most powerful ingredients and also <span className="text-gold font-bold text-xl">build a business</span>.
+                </p>
+                
+                <p className="text-lg leading-relaxed font-semibold text-sage mb-4">
+                  Have the <span className="text-coral font-bold text-xl">freedom</span> to make your own schedule, 
+                  work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-xl">desire</span>.
+                </p>
               </div>
             </div>
             
@@ -288,33 +296,45 @@ export default function Home() {
               />
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                <Card className="bg-white shadow-md">
+                <Card className="bg-gradient-to-br from-gold/10 to-coral/10 shadow-xl border-2 border-gold/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                   <CardContent className="p-6">
-                    <div className="text-gold text-2xl mb-2">
-                      <TrendingUp className="h-8 w-8" />
+                    <div className="text-gold text-3xl mb-3 animate-pulse">
+                      <TrendingUp className="h-10 w-10" />
                     </div>
-                    <h3 className="font-semibold text-forest mb-2">Earn Supplemental Income</h3>
-                    <p className="text-gray-600 text-sm">The harder you work, the more earning potential you have. Building a business takes commitment.</p>
+                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-forest to-sage bg-clip-text text-transparent">
+                      💰 Earn Supplemental Income
+                    </h3>
+                    <p className="text-forest font-semibold text-base">
+                      The <span className="text-coral font-bold">harder you work</span>, the more 
+                      <span className="text-gold font-bold"> earning potential</span> you have. 
+                      Building a business takes <span className="text-sage font-bold">commitment</span>.
+                    </p>
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white shadow-md">
+                <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl border-2 border-sage/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                   <CardContent className="p-6">
-                    <div className="text-gold text-2xl mb-2">
-                      <Award className="h-8 w-8" />
+                    <div className="text-coral text-3xl mb-3 animate-pulse">
+                      <Award className="h-10 w-10" />
                     </div>
-                    <h3 className="font-semibold text-forest mb-2">Qualify for Incentives</h3>
-                    <p className="text-gray-600 text-sm">Unlock your potential to earn bonuses and qualify to explore travel destinations.</p>
+                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-coral to-gold bg-clip-text text-transparent">
+                      🎯 Qualify for Incentives
+                    </h3>
+                    <p className="text-forest font-semibold text-base">
+                      Unlock your <span className="text-gold font-bold">potential</span> to earn 
+                      <span className="text-coral font-bold"> bonuses</span> and qualify to explore 
+                      <span className="text-sage font-bold">travel destinations</span>.
+                    </p>
                   </CardContent>
                 </Card>
               </div>
               
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
-                className="bg-forest text-white hover:bg-sage px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
               >
-                Start Your Journey
-                <ExternalLink className="ml-2 h-5 w-5" />
+                🚀 Start Your Journey Today!
+                <ExternalLink className="ml-3 h-6 w-6" />
               </Button>
             </div>
           </div>
