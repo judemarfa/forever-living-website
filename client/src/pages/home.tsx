@@ -31,6 +31,7 @@ import {
   Instagram,
   Linkedin
 } from "lucide-react";
+import qrCodeImage from "@/assets/qr-code.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -184,13 +185,49 @@ export default function Home() {
           <p className="text-xl sm:text-2xl mb-8 font-light animate-fadeInUp">
             Empowering wellness through nature's best – Aloe Vera & Omega-3
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp">
-            <Button 
-              onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
-              className="bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
-            >
-              Best Seller
-            </Button>
+          {/* Call to Action */}
+          <div className="mb-8 animate-fadeInUp">
+            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-4 mb-6 animate-pulse">
+              <p className="text-white text-lg font-semibold mb-2">🔥 Limited Time Offer!</p>
+              <p className="text-cream text-sm">Get your premium wellness products now - Click the button below!</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <Button 
+                onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                className="relative bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle"
+              >
+                <span className="relative z-10 flex items-center">
+                  Best Seller
+                  <Star className="h-5 w-5 ml-2 animate-pulse" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 transition-all duration-700 animate-shimmer" />
+              </Button>
+              
+              {/* QR Code */}
+              <div className="flex flex-col items-center animate-bounce-subtle">
+                <div className="relative">
+                  <div 
+                    onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                    className="bg-white p-2 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
+                  >
+                    <img 
+                      src={qrCodeImage} 
+                      alt="QR Code to Best Seller Products" 
+                      className="w-16 h-16 sm:w-20 sm:h-20" 
+                    />
+                  </div>
+                  <div className="absolute -top-1 -right-1 bg-coral text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                    NEW
+                  </div>
+                </div>
+                <p className="text-cream text-xs mt-2 text-center font-semibold">📱 Scan for quick access</p>
+              </div>
+            </div>
+            
             <Button 
               onClick={() => scrollToSection('about')}
               variant="outline"
@@ -538,16 +575,49 @@ export default function Home() {
             </Card>
           </div>
           
+          {/* Enhanced Call to Action */}
           <div className="text-center animate-on-scroll">
-            <Button 
-              onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
-              className="bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-105 transition-all duration-300 inline-flex items-center"
-            >
-              Best Seller
-              <ExternalLink className="h-5 w-5 ml-2" />
-            </Button>
+            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-6 mb-8 animate-pulse">
+              <p className="text-white text-2xl font-bold mb-2">🌟 Shop Our #1 Best Seller!</p>
+              <p className="text-cream text-lg">Premium wellness products trusted by thousands</p>
+            </div>
             
-            <p className="text-green-100 mt-4 text-sm flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
+              <Button 
+                onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                className="relative bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group inline-flex items-center animate-glow animate-bounce-subtle"
+              >
+                <span className="relative z-10 flex items-center">
+                  Best Seller
+                  <Star className="h-6 w-6 ml-2 animate-pulse" />
+                  <ExternalLink className="h-5 w-5 ml-2" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 transition-all duration-700 animate-shimmer" />
+              </Button>
+              
+              {/* QR Code */}
+              <div className="flex flex-col items-center animate-bounce-subtle">
+                <div className="relative">
+                  <div 
+                    onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                    className="bg-white p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
+                  >
+                    <img 
+                      src={qrCodeImage} 
+                      alt="QR Code to Best Seller Products" 
+                      className="w-20 h-20 sm:w-24 sm:h-24" 
+                    />
+                  </div>
+                  <div className="absolute -top-2 -right-2 bg-coral text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                    SHOP
+                  </div>
+                </div>
+                <p className="text-cream text-sm mt-2 text-center font-semibold">📱 Scan to Shop Now!</p>
+              </div>
+            </div>
+            
+            <p className="text-green-100 text-sm flex items-center justify-center">
               <Shield className="h-4 w-4 mr-1" />
               Secure ordering, payment, and direct shipping available
             </p>
