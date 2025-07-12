@@ -186,10 +186,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp">
             <Button 
-              onClick={() => scrollToSection('shop')}
+              onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
               className="bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
             >
-              Shop Now
+              Best Seller
             </Button>
             <Button 
               onClick={() => scrollToSection('about')}
@@ -332,7 +332,7 @@ export default function Home() {
                 </div>
                 
                 <Button 
-                  onClick={() => scrollToSection('shop')}
+                  onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
                   className="bg-sage hover:bg-green-600 text-white w-full"
                 >
                   Learn More About Aloe Vera
@@ -398,7 +398,7 @@ export default function Home() {
                 </div>
                 
                 <Button 
-                  onClick={() => scrollToSection('shop')}
+                  onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
                   className="bg-blue-600 hover:bg-blue-700 text-white w-full"
                 >
                   Protect Your Heart Health
@@ -540,10 +540,10 @@ export default function Home() {
           
           <div className="text-center animate-on-scroll">
             <Button 
-              onClick={() => window.open('https://shop.foreverliving.com/rep/your-id', '_blank')}
+              onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
               className="bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-105 transition-all duration-300 inline-flex items-center"
             >
-              Visit Full Store & Order Now
+              Best Seller
               <ExternalLink className="h-5 w-5 ml-2" />
             </Button>
             
