@@ -32,6 +32,7 @@ import {
   Linkedin
 } from "lucide-react";
 import qrCodeImage from "@/assets/qr-code.png";
+import joinFamilyImage from "@/assets/join-family.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -193,7 +194,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp">
+          <div className="flex flex-col lg:flex-row gap-6 justify-center items-center animate-fadeInUp">
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
@@ -225,6 +226,21 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-cream text-xs mt-2 text-center font-semibold">📱 Scan for quick access</p>
+              </div>
+
+              {/* Join Our Forever Family */}
+              <div className="flex flex-col items-center animate-bounce-subtle">
+                <div 
+                  onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
+                  className="bg-white p-2 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
+                >
+                  <img 
+                    src={joinFamilyImage} 
+                    alt="Join Our Forever Family" 
+                    className="w-16 h-16 sm:w-20 sm:h-20 object-contain" 
+                  />
+                </div>
+                <p className="text-cream text-xs mt-2 text-center font-semibold">👥 Join Our Family</p>
               </div>
             </div>
             
@@ -582,7 +598,7 @@ export default function Home() {
               <p className="text-cream text-lg">Premium wellness products trusted by thousands</p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-6">
+            <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-6">
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
                 className="relative bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group inline-flex items-center animate-glow animate-bounce-subtle"
@@ -614,6 +630,26 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-cream text-sm mt-2 text-center font-semibold">📱 Scan to Shop Now!</p>
+              </div>
+
+              {/* Join Our Forever Family */}
+              <div className="flex flex-col items-center animate-bounce-subtle">
+                <div className="relative">
+                  <div 
+                    onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
+                    className="bg-white p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
+                  >
+                    <img 
+                      src={joinFamilyImage} 
+                      alt="Join Our Forever Family" 
+                      className="w-20 h-20 sm:w-24 sm:h-24 object-contain" 
+                    />
+                  </div>
+                  <div className="absolute -top-2 -right-2 bg-sage text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                    JOIN
+                  </div>
+                </div>
+                <p className="text-cream text-sm mt-2 text-center font-semibold">👥 Join Our Family</p>
               </div>
             </div>
             
