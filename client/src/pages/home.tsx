@@ -38,10 +38,46 @@ import firstHealthLogo from "@/assets/1st-health-logo.svg";
 import recognitionBadge from "@/assets/recognition-badge.png";
 import foreverOpportunityImage from "@/assets/forever-opportunity.png";
 import businessBenefitsImage from "@/assets/business-benefits.png";
+import healthcareDividedImage from "@/assets/healthcare-divided.png";
+import todayTomorrowImage from "@/assets/today-tomorrow.png";
+import nutritionSuperhighwayImage from "@/assets/nutrition-superhighway.png";
+import worthMultibillionImage from "@/assets/worth-multibillion.png";
 
 export default function Home() {
   const { toast } = useToast();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const carouselImages = [
+    {
+      src: healthcareDividedImage,
+      alt: "Healthcare Industry - Sickness vs Wellness Comparison",
+      title: "Healthcare Industry Analysis"
+    },
+    {
+      src: todayTomorrowImage,
+      alt: "Today vs Tomorrow - Cellular Regeneration",
+      title: "Cellular Regeneration Process"
+    },
+    {
+      src: nutritionSuperhighwayImage,
+      alt: "Nutrition Superhighway - Body Systems Timeline",
+      title: "Nutrition Superhighway"
+    },
+    {
+      src: worthMultibillionImage,
+      alt: "Nutritional Supplements Worth Multi-Billion Globally",
+      title: "Global Supplement Market"
+    }
+  ];
+  
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    }, 4000); // Change slide every 4 seconds
+    
+    return () => clearInterval(timer);
+  }, [carouselImages.length]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -253,6 +289,50 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="animate-on-scroll">
+              {/* Carousel Gallery */}
+              <div className="relative mb-8 bg-gradient-to-br from-sage/20 to-gold/20 p-4 rounded-2xl shadow-xl border-2 border-gold/30">
+                <div className="relative overflow-hidden rounded-xl">
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {carouselImages.map((image, index) => (
+                      <div key={index} className="w-full flex-shrink-0">
+                        <img 
+                          src={image.src} 
+                          alt={image.alt}
+                          className="w-full h-64 sm:h-80 object-cover rounded-xl shadow-lg"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* Carousel indicators */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {carouselImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentSlide(index)}
+                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                          index === currentSlide 
+                            ? 'bg-gold shadow-lg scale-125' 
+                            : 'bg-white/50 hover:bg-white/80'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  
+                  {/* Carousel title overlay */}
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="bg-gradient-to-r from-forest/90 to-sage/90 text-white px-4 py-2 rounded-lg shadow-lg">
+                      <h3 className="font-bold text-lg text-center">
+                        {carouselImages[currentSlide].title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div className="relative mb-8">
                 <img 
                   src={antonioMarfaImage} 
