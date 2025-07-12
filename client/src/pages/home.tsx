@@ -293,7 +293,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="max-w-4xl mx-auto">
             <div className="animate-on-scroll">
               {/* Carousel Gallery */}
               <div className="relative mb-8 bg-gradient-to-br from-sage/20 to-gold/20 p-4 rounded-2xl shadow-xl border-2 border-gold/30">
@@ -365,61 +365,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="animate-on-scroll">
-              <img 
-                src={foreverOpportunityImage} 
-                alt="The Forever Opportunity - Build Your Business" 
-                className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
-              />
-              
-              <img 
-                src={businessBenefitsImage} 
-                alt="Business Benefits - Build, Earn, Qualify, Training, Discounts, Global Family" 
-                className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
-              />
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                <Card className="bg-gradient-to-br from-gold/10 to-coral/10 shadow-xl border-2 border-gold/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <CardContent className="p-6">
-                    <div className="text-gold text-3xl mb-3 animate-pulse">
-                      <TrendingUp className="h-10 w-10" />
-                    </div>
-                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-forest to-sage bg-clip-text text-transparent">
-                      💰 Earn Supplemental Income
-                    </h3>
-                    <p className="text-forest font-semibold text-base">
-                      The <span className="text-coral font-bold">harder you work</span>, the more 
-                      <span className="text-gold font-bold"> earning potential</span> you have. 
-                      Building a business takes <span className="text-sage font-bold">commitment</span>.
-                    </p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl border-2 border-sage/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <CardContent className="p-6">
-                    <div className="text-coral text-3xl mb-3 animate-pulse">
-                      <Award className="h-10 w-10" />
-                    </div>
-                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-coral to-gold bg-clip-text text-transparent">
-                      🎯 Qualify for Incentives
-                    </h3>
-                    <p className="text-forest font-semibold text-base">
-                      Unlock your <span className="text-gold font-bold">potential</span> to earn 
-                      <span className="text-coral font-bold"> bonuses</span> and qualify to explore 
-                      <span className="text-sage font-bold">travel destinations</span>.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-              
-              <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
-                className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
-              >
-                🚀 Start Your Journey Today!
-                <ExternalLink className="ml-3 h-6 w-6" />
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
