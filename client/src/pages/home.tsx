@@ -29,7 +29,8 @@ import {
   Headphones,
   Facebook,
   Instagram,
-  Linkedin
+  Linkedin,
+  Play
 } from "lucide-react";
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
