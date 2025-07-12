@@ -153,7 +153,7 @@ export default function Home() {
                 <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   Home
                 </button>
-                <button onClick={() => scrollToSection('about')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                <button onClick={() => scrollToSection('presentation-image')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   About
                 </button>
                 <button onClick={() => scrollToSection('products')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
@@ -192,7 +192,7 @@ export default function Home() {
               <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 Home
               </button>
-              <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+              <button onClick={() => scrollToSection('presentation-image')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 About
               </button>
               <button onClick={() => scrollToSection('products')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
@@ -332,7 +332,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="relative mb-8">
+              <div id="presentation-image" className="relative mb-8">
                 <img 
                   src={antonioMarfaImage} 
                   alt="Antonio Marfa - Professional wellness consultant presenting at Forever Living Products event" 
