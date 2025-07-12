@@ -308,7 +308,7 @@ export default function Home() {
                   </div>
                   
                   {/* Carousel indicators */}
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
                     {carouselImages.map((_, index) => (
                       <button
                         key={index}
@@ -323,8 +323,8 @@ export default function Home() {
                   </div>
                   
                   {/* Carousel title overlay */}
-                  <div className="absolute top-4 left-4 right-4">
-                    <div className="bg-gradient-to-r from-forest/90 to-sage/90 text-white px-4 py-2 rounded-lg shadow-lg">
+                  <div className="absolute top-4 left-4 right-4 z-10">
+                    <div className="bg-gradient-to-r from-forest/90 to-sage/90 text-white px-4 py-2 rounded-lg shadow-lg backdrop-blur-sm">
                       <h3 className="font-bold text-lg text-center">
                         {carouselImages[currentSlide].title}
                       </h3>
