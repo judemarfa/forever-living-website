@@ -184,7 +184,7 @@ export default function Home() {
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
           <p className="text-xl sm:text-2xl mb-8 font-light animate-fadeInUp">
-            Empowering wellness through nature's best – Aloe Vera & Omega-3
+            "Let food be thy medicine and medicine be thy food"
           </p>
           {/* Call to Action */}
           <div className="mb-8 animate-fadeInUp">
