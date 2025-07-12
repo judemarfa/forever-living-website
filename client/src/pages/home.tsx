@@ -355,12 +355,12 @@ export default function Home() {
                   Your Trusted Wellness Partner
                 </h2>
                 
-                <p className="text-xl mb-4 leading-snug font-semibold">
-                  As a <span className="text-coral font-bold text-2xl">manager-ranked independent agent</span> with Forever Living Products, I've dedicated my career to helping others achieve <span className="text-forest font-bold">optimal wellness</span> through nature's most powerful ingredients and also <span className="text-gold font-bold text-xl">build a business</span>.
+                <p className="text-lg mb-3 leading-tight font-semibold">
+                  As a <span className="text-coral font-bold text-xl">manager-ranked independent agent</span> with Forever Living Products, I've dedicated my career to helping others achieve <span className="text-forest font-bold">optimal wellness</span> through nature's most powerful ingredients and also <span className="text-gold font-bold text-lg">build a business</span>.
                 </p>
                 
-                <p className="text-lg leading-snug font-semibold text-sage mb-4">
-                  Have the <span className="text-coral font-bold text-xl">freedom</span> to make your own schedule, work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-xl">desire</span>.
+                <p className="text-base leading-tight font-semibold text-sage mb-3">
+                  Have the <span className="text-coral font-bold text-lg">freedom</span> to make your own schedule, work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-lg">desire</span>.
                 </p>
               </div>
             </div>
