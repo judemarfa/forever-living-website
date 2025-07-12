@@ -197,7 +197,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-center animate-fadeInUp">
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                 className="relative bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle"
               >
                 <span className="relative z-10 flex items-center">
@@ -212,7 +212,7 @@ export default function Home() {
               <div className="flex flex-col items-center animate-bounce-subtle">
                 <div className="relative">
                   <div 
-                    onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                    onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                     className="bg-white p-2 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
                   >
                     <img 
@@ -385,7 +385,7 @@ export default function Home() {
                 </div>
                 
                 <Button 
-                  onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                  onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                   className="bg-sage hover:bg-green-600 text-white w-full"
                 >
                   Learn More About Aloe Vera
@@ -451,7 +451,7 @@ export default function Home() {
                 </div>
                 
                 <Button 
-                  onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                  onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                   className="bg-blue-600 hover:bg-blue-700 text-white w-full"
                 >
                   Protect Your Heart Health
@@ -600,7 +600,7 @@ export default function Home() {
             
             <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-6">
               <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                 className="relative bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group inline-flex items-center animate-glow animate-bounce-subtle"
               >
                 <span className="relative z-10 flex items-center">
@@ -616,7 +616,7 @@ export default function Home() {
               <div className="flex flex-col items-center animate-bounce-subtle">
                 <div className="relative">
                   <div 
-                    onClick={() => window.open('https://thealoeveraco.shop/bVN0uEY4', '_blank')}
+                    onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
                     className="bg-white p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
                   >
                     <img 
