@@ -433,9 +433,20 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
               <Mail className="h-8 w-8 text-green-400 mr-4" />
-              <span className="text-white text-2xl font-bold">
+              <button 
+                onClick={() => {
+                  try {
+                    window.open('mailto:judemarfa@gmail.com', '_self');
+                  } catch (error) {
+                    // Fallback: copy to clipboard
+                    navigator.clipboard.writeText('judemarfa@gmail.com');
+                    alert('Email address copied to clipboard: judemarfa@gmail.com');
+                  }
+                }}
+                className="text-white text-2xl font-bold hover:text-green-400 transition-colors duration-300 cursor-pointer underline decoration-green-400"
+              >
                 judemarfa@gmail.com
-              </span>
+              </button>
             </div>
             <p className="text-green-400 text-lg font-semibold">
               Ready to start your wellness journey? Contact us today!
