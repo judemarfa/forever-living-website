@@ -428,7 +428,7 @@ export default function Home() {
       </section>
 
       {/* Footer - visible on Contact tab */}
-      <footer className="bg-forest py-8">
+      <footer id="contact" className="bg-forest py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
