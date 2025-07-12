@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="numberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#84cc16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#65a30d;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect width="200" height="60" rx="8" fill="url(#logoGradient)" />
+  
+  <!-- Heart symbol -->
+  <path d="M30 20 C30 15, 25 12, 20 12 C15 12, 10 15, 10 20 C10 25, 20 35, 30 42 C40 35, 50 25, 50 20 C50 15, 45 12, 40 12 C35 12, 30 15, 30 20 Z" 
+        fill="#ff6b6b" opacity="0.9" filter="url(#glow)"/>
+  
+  <!-- Plus sign in heart -->
+  <rect x="27" y="17" width="6" height="2" fill="white" />
+  <rect x="29" y="15" width="2" height="6" fill="white" />
+  
+  <!-- Leaf decoration -->
+  <path d="M60 15 Q70 10 75 20 Q70 30 60 25 Q65 20 60 15" fill="url(#leafGradient)" opacity="0.8"/>
+  
+  <!-- Number "1" -->
+  <text x="90" y="42" fill="url(#numberGradient)" font-family="Arial, sans-serif" font-size="36" font-weight="bold" filter="url(#glow)">1</text>
+  
+  <!-- "st" superscript -->
+  <text x="105" y="28" fill="url(#numberGradient)" font-family="Arial, sans-serif" font-size="16" font-weight="bold">st</text>
+  
+  <!-- "Health" text -->
+  <text x="125" y="42" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" filter="url(#glow)">Health</text>
+  
+  <!-- Decorative dots -->
+  <circle cx="22" cy="48" r="2" fill="rgba(255,255,255,0.6)" />
+  <circle cx="30" cy="52" r="1.5" fill="rgba(255,255,255,0.4)" />
+  <circle cx="38" cy="48" r="2" fill="rgba(255,255,255,0.6)" />
+  
+  <!-- Sparkle effect -->
+  <path d="M180 15 L182 20 L187 18 L182 20 L180 25 L178 20 L173 18 L178 20 Z" fill="white" opacity="0.7" />
+  <path d="M170 45 L171 48 L174 47 L171 48 L170 51 L169 48 L166 47 L169 48 Z" fill="white" opacity="0.5" />
+</svg>

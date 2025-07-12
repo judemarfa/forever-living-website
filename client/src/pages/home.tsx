@@ -34,6 +34,7 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
+import firstHealthLogo from "@/assets/1st-health-logo.svg";
 
 export default function Home() {
   const { toast } = useToast();
@@ -100,9 +101,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-forest">
-                FOREVER<sup className="text-xs">®</sup>
-              </span>
+              <img 
+                src={firstHealthLogo} 
+                alt="1st Health Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             
             {/* Desktop Navigation */}
