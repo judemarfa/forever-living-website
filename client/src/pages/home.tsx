@@ -37,6 +37,7 @@ import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
 import firstHealthLogo from "@/assets/1st-health-logo.svg";
 import recognitionBadge from "@/assets/recognition-badge.png";
 import foreverOpportunityImage from "@/assets/forever-opportunity.png";
+import businessBenefitsImage from "@/assets/business-benefits.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -292,6 +293,12 @@ export default function Home() {
               <img 
                 src={foreverOpportunityImage} 
                 alt="The Forever Opportunity - Build Your Business" 
+                className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
+              />
+              
+              <img 
+                src={businessBenefitsImage} 
+                alt="Business Benefits - Build, Earn, Qualify, Training, Discounts, Global Family" 
                 className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
               />
               
