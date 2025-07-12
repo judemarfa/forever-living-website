@@ -42,6 +42,7 @@ import healthcareDividedImage from "@/assets/healthcare-divided.png";
 import todayTomorrowImage from "@/assets/today-tomorrow.png";
 import nutritionSuperhighwayImage from "@/assets/nutrition-superhighway.png";
 import worthMultibillionImage from "@/assets/worth-multibillion.png";
+import youtubeChannelImage from "@assets/image_1752314839822.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -381,7 +382,7 @@ export default function Home() {
                 className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
               />
               
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-8">
                 <Button 
                   onClick={() => window.open('https://thealoeveraco.shop/51mqp', '_blank')}
                   className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
@@ -389,6 +390,15 @@ export default function Home() {
                   🚀 Start Your Journey Today!
                   <ExternalLink className="ml-3 h-6 w-6" />
                 </Button>
+              </div>
+              
+              <div className="flex justify-center">
+                <img 
+                  src={youtubeChannelImage} 
+                  alt="JudeHealthBiz Talk YouTube Channel" 
+                  className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto cursor-pointer transform hover:scale-105 transition-all duration-300" 
+                  onClick={() => window.open('https://www.youtube.com/@JudeHealthBizTalk', '_blank')}
+                />
               </div>
             </div>
           </div>
