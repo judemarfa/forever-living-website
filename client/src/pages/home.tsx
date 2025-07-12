@@ -35,6 +35,7 @@ import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
 import firstHealthLogo from "@/assets/1st-health-logo.svg";
+import recognitionBadge from "@/assets/recognition-badge.png";
 
 export default function Home() {
   const { toast } = useToast();
@@ -255,12 +256,26 @@ export default function Home() {
       <section id="about" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-on-scroll">
+            <div className="animate-on-scroll relative">
               <img 
                 src={antonioMarfaImage} 
                 alt="Antonio Marfa - Professional wellness consultant presenting at Forever Living Products event" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
+              
+              {/* Recognition badge overlay */}
+              <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                <img 
+                  src={recognitionBadge} 
+                  alt="Recognized Manager - Antonio Marfa" 
+                  className="w-64 h-auto opacity-95 shadow-lg rounded-lg"
+                />
+                <img 
+                  src={recognitionBadge} 
+                  alt="Recognized Manager - Antonio Marfa" 
+                  className="w-56 h-auto opacity-90 shadow-lg rounded-lg"
+                />
+              </div>
             </div>
             
             <div className="animate-on-scroll">

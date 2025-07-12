@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <clipPath id="imageClip">
+      <rect width="800" height="600" rx="16"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Base presentation image -->
+  <image href="../assets/antonio-marfa-professional.png" x="0" y="0" width="800" height="600" clip-path="url(#imageClip)"/>
+  
+  <!-- Badge overlay positioned over the audience area -->
+  <image href="../assets/recognition-badge.png" x="50" y="420" width="300" height="80" opacity="0.95" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.3))"/>
+  
+  <!-- Additional badge for emphasis -->
+  <image href="../assets/recognition-badge.png" x="450" y="380" width="280" height="75" opacity="0.9" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.3))"/>
+</svg>
