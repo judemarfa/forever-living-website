@@ -156,8 +156,8 @@ export default function Home() {
                 <button onClick={() => scrollToSection('presentation-image')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   About
                 </button>
-                <button onClick={() => scrollToSection('products')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
-                  Products
+                <button onClick={() => window.open('https://thealoeveraco.shop/kyrhHmnl', '_blank')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Drinks
                 </button>
                 <button onClick={() => scrollToSection('gallery')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
                   Gallery
@@ -195,8 +195,8 @@ export default function Home() {
               <button onClick={() => scrollToSection('presentation-image')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 About
               </button>
-              <button onClick={() => scrollToSection('products')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
-                Products
+              <button onClick={() => window.open('https://thealoeveraco.shop/kyrhHmnl', '_blank')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Drinks
               </button>
               <button onClick={() => scrollToSection('gallery')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
                 Gallery
