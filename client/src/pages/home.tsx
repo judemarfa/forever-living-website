@@ -394,16 +394,18 @@ export default function Home() {
               </div>
               
               <div className="flex justify-center">
-                <div className="relative group">
+                <div 
+                  className="relative group cursor-pointer" 
+                  onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
+                >
                   <img 
                     src={youtubeChannelImage} 
                     alt="JudeHealthBiz Talk YouTube Channel" 
-                    className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto cursor-pointer transform hover:scale-105 transition-all duration-300" 
-                    onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
+                    className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto transform hover:scale-105 transition-all duration-300" 
                   />
                   
                   {/* Clickable indicator overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 rounded-2xl transition-all duration-300 flex items-center justify-center pointer-events-none">
                     <div className="bg-white bg-opacity-90 rounded-full p-4 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300">
                       <Play className="h-8 w-8 text-red-600" />
                     </div>
