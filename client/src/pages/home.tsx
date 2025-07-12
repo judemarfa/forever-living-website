@@ -393,12 +393,31 @@ export default function Home() {
               </div>
               
               <div className="flex justify-center">
-                <img 
-                  src={youtubeChannelImage} 
-                  alt="JudeHealthBiz Talk YouTube Channel" 
-                  className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto cursor-pointer transform hover:scale-105 transition-all duration-300" 
-                  onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
-                />
+                <div className="relative group">
+                  <img 
+                    src={youtubeChannelImage} 
+                    alt="JudeHealthBiz Talk YouTube Channel" 
+                    className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto cursor-pointer transform hover:scale-105 transition-all duration-300" 
+                    onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
+                  />
+                  
+                  {/* Clickable indicator overlay */}
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 rounded-2xl transition-all duration-300 flex items-center justify-center">
+                    <div className="bg-white bg-opacity-90 rounded-full p-4 opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300">
+                      <Play className="h-8 w-8 text-red-600" />
+                    </div>
+                  </div>
+                  
+                  {/* Informational text below the image */}
+                  <div className="text-center mt-4">
+                    <p className="text-lg font-semibold text-gray-800 mb-2">
+                      🎥 Watch Educational Health & Wellness Videos
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Click the image above to visit our YouTube channel for valuable health tips and product insights
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
