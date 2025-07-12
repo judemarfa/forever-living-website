@@ -428,16 +428,16 @@ export default function Home() {
       </section>
 
       {/* Footer - visible on Contact tab */}
-      <footer id="contact" className="bg-forest py-8">
+      <footer id="contact" className="bg-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-4">
-              <Mail className="h-6 w-6 text-sage mr-3" />
-              <span className="text-white text-lg font-semibold">
+            <div className="flex items-center justify-center mb-6">
+              <Mail className="h-8 w-8 text-green-400 mr-4" />
+              <span className="text-white text-2xl font-bold">
                 judemarfa@gmail.com
               </span>
             </div>
-            <p className="text-sage text-sm">
+            <p className="text-green-400 text-lg font-semibold">
               Ready to start your wellness journey? Contact us today!
             </p>
           </div>
