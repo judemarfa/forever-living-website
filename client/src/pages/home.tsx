@@ -433,26 +433,13 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
               <Mail className="h-6 w-6 text-sage mr-3" />
-              <a 
-                href="mailto:judemarfa@gmail.com" 
-                className="text-white hover:text-sage transition-colors duration-300 text-lg font-semibold"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = 'mailto:judemarfa@gmail.com';
-                }}
-              >
+              <span className="text-white text-lg font-semibold">
                 judemarfa@gmail.com
-              </a>
+              </span>
             </div>
-            <p className="text-sage text-sm mb-4">
+            <p className="text-sage text-sm">
               Ready to start your wellness journey? Contact us today!
             </p>
-            <Button 
-              onClick={() => window.location.href = 'mailto:judemarfa@gmail.com'}
-              className="bg-sage hover:bg-green-600 text-white px-6 py-2 text-sm font-semibold"
-            >
-              Send Email
-            </Button>
           </div>
         </div>
       </footer>
