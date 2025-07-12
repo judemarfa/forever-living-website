@@ -395,349 +395,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products Section */}
-      <section id="products" className="py-20 bg-white">
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
-              Featured Wellness Solutions
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover our premium health supplements, carefully crafted from nature's finest ingredients to support your wellness journey.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Aloe Vera Drink */}
-            <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <div className="bg-sage text-white p-3 rounded-full mr-4">
-                    <Leaf className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-forest">Aloe Vera Drink</h3>
-                    <p className="text-gray-600">Ancient Wellness, Modern Benefits</p>
-                  </div>
-                </div>
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" 
-                  alt="Fresh aloe vera gel" 
-                  className="rounded-lg mb-6 w-full h-48 object-cover" 
-                />
-                
-                <div className="mb-6">
-                  <h4 className="font-semibold text-forest mb-3 flex items-center">
-                    <Clock className="h-5 w-5 mr-2 text-gold" />
-                    Ancient Heritage
-                  </h4>
-                  <p className="text-gray-700 mb-4">
-                    Treasured since Egyptian times, aloe vera has been nature's healing gift for over 6,000 years. Cleopatra herself relied on its powerful properties for health and beauty.
-                  </p>
-                </div>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  <div className="bg-white p-4 rounded-lg">
-                    <Heart className="h-5 w-5 text-coral mb-2" />
-                    <h5 className="font-semibold text-forest mb-1">Gut Health</h5>
-                    <p className="text-sm text-gray-600">Supports digestive wellness</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg">
-                    <Droplets className="h-5 w-5 text-blue-500 mb-2" />
-                    <h5 className="font-semibold text-forest mb-1">Hydration</h5>
-                    <p className="text-sm text-gray-600">Deep cellular hydration</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg">
-                    <Shield className="h-5 w-5 text-green-500 mb-2" />
-                    <h5 className="font-semibold text-forest mb-1">Immune Support</h5>
-                    <p className="text-sm text-gray-600">Strengthens natural defenses</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg">
-                    <RefreshCw className="h-5 w-5 text-sage mb-2" />
-                    <h5 className="font-semibold text-forest mb-1">Natural Detox</h5>
-                    <p className="text-sm text-gray-600">Gentle body cleansing</p>
-                  </div>
-                </div>
-                
-                <Button 
-                  onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                  className="bg-sage hover:bg-green-600 text-white w-full"
-                >
-                  Learn More About Aloe Vera
-                </Button>
-              </CardContent>
-            </Card>
-            
-            {/* Arctic Sea Omega-3 */}
-            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <div className="bg-blue-600 text-white p-3 rounded-full mr-4">
-                    <Fish className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-forest">Arctic Sea Omega-3</h3>
-                    <p className="text-gray-600">Essential Heart Health Support</p>
-                  </div>
-                </div>
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" 
-                  alt="Omega-3 fish oil capsules" 
-                  className="rounded-lg mb-6 w-full h-48 object-cover" 
-                />
-                
-                <div className="mb-6">
-                  <Card className="bg-coral text-white p-4">
-                    <CardContent className="p-0">
-                      <div className="flex items-center mb-2">
-                        <TrendingUp className="h-5 w-5 mr-2" />
-                        <span className="font-semibold">The Silent Killer</span>
-                      </div>
-                      <p className="text-sm opacity-90">
-                        Heart disease often shows no symptoms until it's too late. Preventive care through Omega-3 supplementation is crucial.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-                
-                <div className="grid grid-cols-1 gap-4 mb-6">
-                  <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
-                    <div className="flex items-center mb-2">
-                      <Heart className="h-5 w-5 text-red-500 mr-2" />
-                      <h5 className="font-semibold text-forest">Cardiovascular Health</h5>
-                    </div>
-                    <p className="text-sm text-gray-600">Supports healthy heart function and circulation</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                    <div className="flex items-center mb-2">
-                      <Brain className="h-5 w-5 text-purple-500 mr-2" />
-                      <h5 className="font-semibold text-forest">Brain Function</h5>
-                    </div>
-                    <p className="text-sm text-gray-600">Essential fatty acids for cognitive health</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
-                    <div className="flex items-center mb-2">
-                      <ShieldCheck className="h-5 w-5 text-orange-500 mr-2" />
-                      <h5 className="font-semibold text-forest">Anti-Inflammatory</h5>
-                    </div>
-                    <p className="text-sm text-gray-600">Reduces inflammation throughout the body</p>
-                  </div>
-                </div>
-                
-                <Button 
-                  onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                  className="bg-blue-600 hover:bg-blue-700 text-white w-full"
-                >
-                  Protect Your Heart Health
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Gallery Section */}
-      <section id="gallery" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
-              Premium Product Collection
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our comprehensive range of health and wellness products, each carefully formulated to support your journey to optimal health.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Aloe Vera Gel",
-                description: "Pure, natural aloe vera gel for internal and external use",
-                badge: "Premium Quality",
-                icon: <Leaf className="h-5 w-5" />,
-                color: "text-sage"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Arctic Sea Omega-3",
-                description: "Essential fatty acids for heart and brain health",
-                badge: "Heart Health",
-                icon: <Fish className="h-5 w-5" />,
-                color: "text-blue-600"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Forever Daily",
-                description: "Complete daily vitamin and mineral supplement",
-                badge: "Daily Essentials",
-                icon: <Shield className="h-5 w-5" />,
-                color: "text-gold"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Forever Lite Ultra",
-                description: "High-protein shake for weight management",
-                badge: "Weight Management",
-                icon: <TrendingUp className="h-5 w-5" />,
-                color: "text-coral"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Aloe Skincare",
-                description: "Natural skincare products with aloe vera",
-                badge: "Beauty & Care",
-                icon: <Heart className="h-5 w-5" />,
-                color: "text-purple-600"
-              },
-              {
-                image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
-                title: "Bee Products",
-                description: "Natural honey, bee pollen, and royal jelly",
-                badge: "Nature's Gift",
-                icon: <Heart className="h-5 w-5" />,
-                color: "text-yellow-600"
-              }
-            ].map((product, index) => (
-              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
-                <img 
-                  src={product.image} 
-                  alt={product.title}
-                  className="w-full h-48 object-cover rounded-t-lg" 
-                />
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-forest mb-2">{product.title}</h3>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className={`font-semibold ${product.color}`}>{product.badge}</span>
-                    <div className={product.color}>
-                      {product.icon}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Shop Section */}
-      <section id="shop" className="py-20 bg-forest text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-serif">
               Ready to Transform Your Health?
             </h2>
-            <p className="text-xl text-green-100 max-w-3xl mx-auto">
-              Shop our complete collection of premium Forever Living Products with secure ordering, flexible payment options, and direct shipping to your door.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Contact us today to start your wellness journey with Forever Living Products.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
-              <CardContent className="p-6">
-                <div className="text-gold text-3xl mb-4">
-                  <Shield className="h-12 w-12 mx-auto" />
+          <div className="max-w-md mx-auto text-center">
+            <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl">
+              <CardContent className="p-8">
+                <div className="flex items-center justify-center mb-6">
+                  <Mail className="h-6 w-6 text-sage mr-3" />
+                  <span className="text-lg font-semibold text-forest">judemarfa@gmail.com</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Secure Ordering</h3>
-                <p className="text-green-100">Safe and encrypted transactions with multiple payment options</p>
+                
+                <Button 
+                  onClick={() => window.location.href = 'mailto:judemarfa@gmail.com'}
+                  className="bg-sage hover:bg-green-600 text-white px-8 py-3 text-lg font-semibold"
+                >
+                  Contact Us Today
+                </Button>
               </CardContent>
             </Card>
-            
-            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
-              <CardContent className="p-6">
-                <div className="text-gold text-3xl mb-4">
-                  <Truck className="h-12 w-12 mx-auto" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Direct Shipping</h3>
-                <p className="text-green-100">Fast and reliable delivery straight from Forever Living</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
-              <CardContent className="p-6">
-                <div className="text-gold text-3xl mb-4">
-                  <Headphones className="h-12 w-12 mx-auto" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Personal Support</h3>
-                <p className="text-green-100">Dedicated customer service and wellness consultation</p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          {/* Enhanced Call to Action */}
-          <div className="text-center animate-on-scroll">
-            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-6 mb-8 animate-pulse">
-              <p className="text-white text-2xl font-bold mb-2">🌟 15% discount on all orders</p>
-              <p className="text-cream text-lg">Premium wellness products trusted by thousands</p>
-            </div>
-            
-            <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-6">
-              <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                className="relative bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group inline-flex items-center animate-glow animate-bounce-subtle"
-              >
-                <span className="relative z-10 flex items-center">
-                  Best Seller
-                  <Star className="h-6 w-6 ml-2 animate-pulse" />
-                  <ExternalLink className="h-5 w-5 ml-2" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 transition-all duration-700 animate-shimmer" />
-              </Button>
-              
-              {/* QR Code */}
-              <div className="flex flex-col items-center animate-bounce-subtle">
-                <div className="relative">
-                  <div 
-                    onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                    className="bg-white p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
-                  >
-                    <img 
-                      src={qrCodeImage} 
-                      alt="QR Code to Best Seller Products" 
-                      className="w-20 h-20 sm:w-24 sm:h-24" 
-                    />
-                  </div>
-                  <div className="absolute -top-2 -right-2 bg-coral text-white text-xs px-2 py-1 rounded-full animate-pulse">
-                    SHOP
-                  </div>
-                </div>
-                <p className="text-cream text-sm mt-2 text-center font-semibold">📱 Scan to Shop Now!</p>
-              </div>
-
-              {/* Join Our Forever Family */}
-              <div className="flex flex-col items-center animate-bounce-subtle">
-                <div className="relative">
-                  <div 
-                    onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
-                    className="bg-white p-3 rounded-lg cursor-pointer transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group animate-glow"
-                  >
-                    <img 
-                      src={joinFamilyImage} 
-                      alt="Join Our Forever Family" 
-                      className="w-20 h-20 sm:w-24 sm:h-24 object-contain" 
-                    />
-                  </div>
-                  <div className="absolute -top-2 -right-2 bg-sage text-white text-xs px-2 py-1 rounded-full animate-pulse">
-                    JOIN
-                  </div>
-                </div>
-                <p className="text-cream text-sm mt-2 text-center font-semibold">👥 Join Our Family</p>
-              </div>
-            </div>
-            
-            <p className="text-green-100 text-sm flex items-center justify-center">
-              <Shield className="h-4 w-4 mr-1" />
-              Secure ordering, payment, and direct shipping available
-            </p>
           </div>
         </div>
       </section>
-
 
     </div>
   );
 }
+
