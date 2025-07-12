@@ -381,39 +381,7 @@ export default function Home() {
                 className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
               />
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                <Card className="bg-gradient-to-br from-gold/10 to-coral/10 shadow-xl border-2 border-gold/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <CardContent className="p-6">
-                    <div className="text-gold text-3xl mb-3 animate-pulse">
-                      <TrendingUp className="h-10 w-10" />
-                    </div>
-                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-forest to-sage bg-clip-text text-transparent">
-                      💰 Earn Supplemental Income
-                    </h3>
-                    <p className="text-forest font-semibold text-base">
-                      The <span className="text-coral font-bold">harder you work</span>, the more 
-                      <span className="text-gold font-bold"> earning potential</span> you have. 
-                      Building a business takes <span className="text-sage font-bold">commitment</span>.
-                    </p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl border-2 border-sage/40 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <CardContent className="p-6">
-                    <div className="text-coral text-3xl mb-3 animate-pulse">
-                      <Award className="h-10 w-10" />
-                    </div>
-                    <h3 className="font-bold text-xl mb-3 bg-gradient-to-r from-coral to-gold bg-clip-text text-transparent">
-                      🎯 Qualify for Incentives
-                    </h3>
-                    <p className="text-forest font-semibold text-base">
-                      Unlock your <span className="text-gold font-bold">potential</span> to earn 
-                      <span className="text-coral font-bold"> bonuses</span> and qualify to explore 
-                      <span className="text-sage font-bold">travel destinations</span>.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
+
               
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
