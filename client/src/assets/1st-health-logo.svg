@@ -24,20 +24,10 @@
   <!-- Background rounded rectangle -->
   <rect width="200" height="60" rx="8" fill="url(#logoGradient)" />
   
-  <!-- Number "1" with red and yellow outline -->
-  <text x="70" y="42" fill="none" stroke="#dc2626" stroke-width="3" font-family="Arial, sans-serif" font-size="36" font-weight="bold">1</text>
-  <text x="70" y="42" fill="none" stroke="#fbbf24" stroke-width="1.5" font-family="Arial, sans-serif" font-size="36" font-weight="bold">1</text>
-  <text x="70" y="42" fill="url(#numberGradient)" font-family="Arial, sans-serif" font-size="36" font-weight="bold" filter="url(#glow)">1</text>
-  
-  <!-- "st" superscript with red and yellow outline -->
-  <text x="95" y="28" fill="none" stroke="#dc2626" stroke-width="2" font-family="Arial, sans-serif" font-size="16" font-weight="bold">st</text>
-  <text x="95" y="28" fill="none" stroke="#fbbf24" stroke-width="1" font-family="Arial, sans-serif" font-size="16" font-weight="bold">st</text>
-  <text x="95" y="28" fill="url(#numberGradient)" font-family="Arial, sans-serif" font-size="16" font-weight="bold">st</text>
-  
-  <!-- "Health" text with red and yellow outline -->
-  <text x="115" y="42" fill="none" stroke="#dc2626" stroke-width="3" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Health</text>
-  <text x="115" y="42" fill="none" stroke="#fbbf24" stroke-width="1.5" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Health</text>
-  <text x="115" y="42" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold" filter="url(#glow)">Health</text>
+  <!-- Complete "1stHealth" text with red and yellow outline - centered -->
+  <text x="100" y="42" text-anchor="middle" fill="none" stroke="#dc2626" stroke-width="3" font-family="Arial, sans-serif" font-size="32" font-weight="bold">1stHealth</text>
+  <text x="100" y="42" text-anchor="middle" fill="none" stroke="#fbbf24" stroke-width="1.5" font-family="Arial, sans-serif" font-size="32" font-weight="bold">1stHealth</text>
+  <text x="100" y="42" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="bold" filter="url(#glow)">1stHealth</text>
   
   <!-- Decorative sparkle effects -->
   <path d="M40 15 L42 20 L47 18 L42 20 L40 25 L38 20 L33 18 L38 20 Z" fill="white" opacity="0.7" />
