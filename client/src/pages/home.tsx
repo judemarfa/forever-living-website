@@ -264,16 +264,11 @@ export default function Home() {
               />
               
               {/* Recognition badge overlay */}
-              <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
                 <img 
                   src={recognitionBadge} 
                   alt="Recognized Manager - Antonio Marfa" 
                   className="w-64 h-auto opacity-95 shadow-lg rounded-lg"
-                />
-                <img 
-                  src={recognitionBadge} 
-                  alt="Recognized Manager - Antonio Marfa" 
-                  className="w-56 h-auto opacity-90 shadow-lg rounded-lg"
                 />
               </div>
             </div>
