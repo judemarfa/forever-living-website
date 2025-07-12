@@ -847,145 +847,17 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="animate-on-scroll">
-              <h3 className="text-2xl font-bold text-forest mb-6">Get In Touch</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-center">
-                  <div className="bg-sage text-white p-3 rounded-full mr-4">
-                    <Mail className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-forest">Email</h4>
-                    <p className="text-gray-600">your-email@example.com</p>
-                  </div>
+          <div className="flex justify-center">
+            <div className="animate-on-scroll text-center">
+              <div className="flex items-center justify-center mb-4">
+                <div className="bg-sage text-white p-4 rounded-full mr-4">
+                  <Mail className="h-8 w-8" />
                 </div>
-                
-                <div className="flex items-center">
-                  <div className="bg-sage text-white p-3 rounded-full mr-4">
-                    <Phone className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-forest">Phone</h4>
-                    <p className="text-gray-600">(555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center">
-                  <div className="bg-sage text-white p-3 rounded-full mr-4">
-                    <Clock className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-forest">Availability</h4>
-                    <p className="text-gray-600">Monday - Friday: 9AM - 6PM</p>
-                    <p className="text-gray-600">Saturday: 10AM - 4PM</p>
-                  </div>
+                <div>
+                  <h4 className="font-semibold text-forest text-xl">Email</h4>
+                  <p className="text-gray-600 text-lg">judemarfa@gmail.com</p>
                 </div>
               </div>
-              
-              <div className="mt-8">
-                <h4 className="font-semibold text-forest mb-4">Follow Us</h4>
-                <div className="flex space-x-4">
-                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
-                    <Facebook className="h-5 w-5" />
-                  </Button>
-                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
-                    <Instagram className="h-5 w-5" />
-                  </Button>
-                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
-                    <Linkedin className="h-5 w-5" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-            
-            <div className="animate-on-scroll">
-              <h3 className="text-2xl font-bold text-forest mb-6">Send a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Name
-                  </Label>
-                  <Input
-                    type="text"
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) => handleInputChange('name', e.target.value)}
-                    placeholder="Your Name"
-                    className="focus:ring-sage focus:border-sage"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </Label>
-                  <Input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange('email', e.target.value)}
-                    placeholder="your.email@example.com"
-                    className="focus:ring-sage focus:border-sage"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone
-                  </Label>
-                  <Input
-                    type="tel"
-                    id="phone"
-                    value={formData.phone}
-                    onChange={(e) => handleInputChange('phone', e.target.value)}
-                    placeholder="(555) 123-4567"
-                    className="focus:ring-sage focus:border-sage"
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
-                    Interest
-                  </Label>
-                  <Select value={formData.interest} onValueChange={(value) => handleInputChange('interest', value)}>
-                    <SelectTrigger className="focus:ring-sage focus:border-sage">
-                      <SelectValue placeholder="Select your interest" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="products">Product Information</SelectItem>
-                      <SelectItem value="consultation">Wellness Consultation</SelectItem>
-                      <SelectItem value="business">Business Opportunity</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div>
-                  <Label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => handleInputChange('message', e.target.value)}
-                    rows={4}
-                    placeholder="Tell us about your wellness goals or questions..."
-                    className="focus:ring-sage focus:border-sage"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-sage hover:bg-green-600 text-white transform hover:scale-105 transition-all duration-300"
-                >
-                  Send Message
-                </Button>
-              </form>
             </div>
           </div>
         </div>
@@ -1056,15 +928,7 @@ export default function Home() {
               <ul className="space-y-2 text-green-100">
                 <li className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
-                  your-email@example.com
-                </li>
-                <li className="flex items-center">
-                  <Phone className="h-4 w-4 mr-2" />
-                  (555) 123-4567
-                </li>
-                <li className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2" />
-                  Mon-Fri: 9AM-6PM
+                  judemarfa@gmail.com
                 </li>
               </ul>
             </div>
