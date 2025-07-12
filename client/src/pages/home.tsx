@@ -264,7 +264,7 @@ export default function Home() {
               />
               
               {/* Recognition badge overlay */}
-              <div className="absolute bottom-8 left-1/3">
+              <div className="absolute bottom-12 left-4">
                 <img 
                   src={recognitionBadge} 
                   alt="Recognized Manager - Antonio Marfa" 
