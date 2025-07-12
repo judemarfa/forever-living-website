@@ -1,0 +1,871 @@
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
+import { 
+  Heart, 
+  Shield, 
+  Droplets, 
+  RefreshCw, 
+  Fish, 
+  Brain, 
+  ShieldCheck, 
+  Award, 
+  Users, 
+  Leaf, 
+  Mail, 
+  Phone, 
+  Clock, 
+  Star, 
+  ExternalLink,
+  Menu,
+  X,
+  TrendingUp,
+  Truck,
+  Headphones,
+  Facebook,
+  Instagram,
+  Linkedin
+} from "lucide-react";
+
+export default function Home() {
+  const { toast } = useToast();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    interest: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Thank you for your message!",
+      description: "We will get back to you soon.",
+    });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      interest: "",
+      message: ""
+    });
+  };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('animate-fadeInUp');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <span className="text-2xl font-bold text-forest">
+                FOREVER<sup className="text-xs">®</sup>
+              </span>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline space-x-4">
+                <button onClick={() => scrollToSection('home')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Home
+                </button>
+                <button onClick={() => scrollToSection('about')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  About
+                </button>
+                <button onClick={() => scrollToSection('products')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Products
+                </button>
+                <button onClick={() => scrollToSection('gallery')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Gallery
+                </button>
+                <button onClick={() => scrollToSection('shop')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Shop
+                </button>
+                <button onClick={() => scrollToSection('contact')} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-forest transition-colors">
+                  Contact
+                </button>
+              </div>
+            </div>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-gray-700 hover:text-forest"
+              >
+                {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Home
+              </button>
+              <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                About
+              </button>
+              <button onClick={() => scrollToSection('products')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Products
+              </button>
+              <button onClick={() => scrollToSection('gallery')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Gallery
+              </button>
+              <button onClick={() => scrollToSection('shop')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Shop
+              </button>
+              <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-forest">
+                Contact
+              </button>
+            </div>
+          </div>
+        )}
+      </nav>
+
+      {/* Hero Section */}
+      <section id="home" className="relative min-h-screen flex items-center justify-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')"
+          }}
+        />
+        <div className="absolute inset-0 hero-gradient" />
+        
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+            Health is the <span className="text-gold">First</span> Wealth
+          </h1>
+          <p className="text-xl sm:text-2xl mb-8 font-light animate-fadeInUp">
+            Empowering wellness through nature's best – Aloe Vera & Omega-3
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp">
+            <Button 
+              onClick={() => scrollToSection('shop')}
+              className="bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            >
+              Shop Now
+            </Button>
+            <Button 
+              onClick={() => scrollToSection('about')}
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
+            >
+              Learn More
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-on-scroll">
+              <img 
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                alt="Professional wellness consultant" 
+                className="rounded-2xl shadow-2xl w-full h-auto" 
+              />
+            </div>
+            
+            <div className="animate-on-scroll">
+              <div className="bg-gold text-white px-6 py-3 rounded-full inline-flex items-center mb-6">
+                <Award className="h-5 w-5 mr-2" />
+                <span className="font-semibold">Recognized Manager</span>
+              </div>
+              
+              <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
+                Your Trusted Wellness Partner
+              </h2>
+              
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                As a <strong>manager-ranked independent agent</strong> with Forever Living Products, I've dedicated my career to helping others achieve optimal wellness through nature's most powerful ingredients.
+              </p>
+              
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Forever Living's commitment to <strong>preservative-free, nature-based processes</strong> aligns perfectly with my belief that true health comes from pure, natural sources. Our Aloe Vera products represent the gold standard in wellness supplementation.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                <Card className="bg-white shadow-md">
+                  <CardContent className="p-6">
+                    <div className="text-gold text-2xl mb-2">
+                      <Users className="h-8 w-8" />
+                    </div>
+                    <h3 className="font-semibold text-forest mb-2">Network Marketing Income</h3>
+                    <p className="text-gray-600 text-sm">Multiple income streams through proven business model</p>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white shadow-md">
+                  <CardContent className="p-6">
+                    <div className="text-gold text-2xl mb-2">
+                      <Leaf className="h-8 w-8" />
+                    </div>
+                    <h3 className="font-semibold text-forest mb-2">Pure Aloe Vera</h3>
+                    <p className="text-gray-600 text-sm">Preservative-free, nature-based wellness products</p>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="bg-forest hover:bg-green-800 text-white px-8 py-4 text-lg font-semibold inline-flex items-center"
+              >
+                Start Your Journey
+                <ExternalLink className="h-5 w-5 ml-2" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products Section */}
+      <section id="products" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
+              Featured Wellness Solutions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover our premium health supplements, carefully crafted from nature's finest ingredients to support your wellness journey.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Aloe Vera Drink */}
+            <Card className="bg-gradient-to-br from-sage/10 to-forest/10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-sage text-white p-3 rounded-full mr-4">
+                    <Leaf className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-forest">Aloe Vera Drink</h3>
+                    <p className="text-gray-600">Ancient Wellness, Modern Benefits</p>
+                  </div>
+                </div>
+                
+                <img 
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" 
+                  alt="Fresh aloe vera gel" 
+                  className="rounded-lg mb-6 w-full h-48 object-cover" 
+                />
+                
+                <div className="mb-6">
+                  <h4 className="font-semibold text-forest mb-3 flex items-center">
+                    <Clock className="h-5 w-5 mr-2 text-gold" />
+                    Ancient Heritage
+                  </h4>
+                  <p className="text-gray-700 mb-4">
+                    Treasured since Egyptian times, aloe vera has been nature's healing gift for over 6,000 years. Cleopatra herself relied on its powerful properties for health and beauty.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-white p-4 rounded-lg">
+                    <Heart className="h-5 w-5 text-coral mb-2" />
+                    <h5 className="font-semibold text-forest mb-1">Gut Health</h5>
+                    <p className="text-sm text-gray-600">Supports digestive wellness</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg">
+                    <Droplets className="h-5 w-5 text-blue-500 mb-2" />
+                    <h5 className="font-semibold text-forest mb-1">Hydration</h5>
+                    <p className="text-sm text-gray-600">Deep cellular hydration</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg">
+                    <Shield className="h-5 w-5 text-green-500 mb-2" />
+                    <h5 className="font-semibold text-forest mb-1">Immune Support</h5>
+                    <p className="text-sm text-gray-600">Strengthens natural defenses</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg">
+                    <RefreshCw className="h-5 w-5 text-sage mb-2" />
+                    <h5 className="font-semibold text-forest mb-1">Natural Detox</h5>
+                    <p className="text-sm text-gray-600">Gentle body cleansing</p>
+                  </div>
+                </div>
+                
+                <Button 
+                  onClick={() => scrollToSection('shop')}
+                  className="bg-sage hover:bg-green-600 text-white w-full"
+                >
+                  Learn More About Aloe Vera
+                </Button>
+              </CardContent>
+            </Card>
+            
+            {/* Arctic Sea Omega-3 */}
+            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-blue-600 text-white p-3 rounded-full mr-4">
+                    <Fish className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-forest">Arctic Sea Omega-3</h3>
+                    <p className="text-gray-600">Essential Heart Health Support</p>
+                  </div>
+                </div>
+                
+                <img 
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" 
+                  alt="Omega-3 fish oil capsules" 
+                  className="rounded-lg mb-6 w-full h-48 object-cover" 
+                />
+                
+                <div className="mb-6">
+                  <Card className="bg-coral text-white p-4">
+                    <CardContent className="p-0">
+                      <div className="flex items-center mb-2">
+                        <TrendingUp className="h-5 w-5 mr-2" />
+                        <span className="font-semibold">The Silent Killer</span>
+                      </div>
+                      <p className="text-sm opacity-90">
+                        Heart disease often shows no symptoms until it's too late. Preventive care through Omega-3 supplementation is crucial.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
+                <div className="grid grid-cols-1 gap-4 mb-6">
+                  <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+                    <div className="flex items-center mb-2">
+                      <Heart className="h-5 w-5 text-red-500 mr-2" />
+                      <h5 className="font-semibold text-forest">Cardiovascular Health</h5>
+                    </div>
+                    <p className="text-sm text-gray-600">Supports healthy heart function and circulation</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                    <div className="flex items-center mb-2">
+                      <Brain className="h-5 w-5 text-purple-500 mr-2" />
+                      <h5 className="font-semibold text-forest">Brain Function</h5>
+                    </div>
+                    <p className="text-sm text-gray-600">Essential fatty acids for cognitive health</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                    <div className="flex items-center mb-2">
+                      <ShieldCheck className="h-5 w-5 text-orange-500 mr-2" />
+                      <h5 className="font-semibold text-forest">Anti-Inflammatory</h5>
+                    </div>
+                    <p className="text-sm text-gray-600">Reduces inflammation throughout the body</p>
+                  </div>
+                </div>
+                
+                <Button 
+                  onClick={() => scrollToSection('shop')}
+                  className="bg-blue-600 hover:bg-blue-700 text-white w-full"
+                >
+                  Protect Your Heart Health
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Gallery Section */}
+      <section id="gallery" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
+              Premium Product Collection
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore our comprehensive range of health and wellness products, each carefully formulated to support your journey to optimal health.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Aloe Vera Gel",
+                description: "Pure, natural aloe vera gel for internal and external use",
+                badge: "Premium Quality",
+                icon: <Leaf className="h-5 w-5" />,
+                color: "text-sage"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Arctic Sea Omega-3",
+                description: "Essential fatty acids for heart and brain health",
+                badge: "Heart Health",
+                icon: <Fish className="h-5 w-5" />,
+                color: "text-blue-600"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Forever Daily",
+                description: "Complete daily vitamin and mineral supplement",
+                badge: "Daily Essentials",
+                icon: <Shield className="h-5 w-5" />,
+                color: "text-gold"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Forever Lite Ultra",
+                description: "High-protein shake for weight management",
+                badge: "Weight Management",
+                icon: <TrendingUp className="h-5 w-5" />,
+                color: "text-coral"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Aloe Skincare",
+                description: "Natural skincare products with aloe vera",
+                badge: "Beauty & Care",
+                icon: <Heart className="h-5 w-5" />,
+                color: "text-purple-600"
+              },
+              {
+                image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+                title: "Bee Products",
+                description: "Natural honey, bee pollen, and royal jelly",
+                badge: "Nature's Gift",
+                icon: <Heart className="h-5 w-5" />,
+                color: "text-yellow-600"
+              }
+            ].map((product, index) => (
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll">
+                <img 
+                  src={product.image} 
+                  alt={product.title}
+                  className="w-full h-48 object-cover rounded-t-lg" 
+                />
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-forest mb-2">{product.title}</h3>
+                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className={`font-semibold ${product.color}`}>{product.badge}</span>
+                    <div className={product.color}>
+                      {product.icon}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Shop Section */}
+      <section id="shop" className="py-20 bg-forest text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-serif">
+              Ready to Transform Your Health?
+            </h2>
+            <p className="text-xl text-green-100 max-w-3xl mx-auto">
+              Shop our complete collection of premium Forever Living Products with secure ordering, flexible payment options, and direct shipping to your door.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
+              <CardContent className="p-6">
+                <div className="text-gold text-3xl mb-4">
+                  <Shield className="h-12 w-12 mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Secure Ordering</h3>
+                <p className="text-green-100">Safe and encrypted transactions with multiple payment options</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
+              <CardContent className="p-6">
+                <div className="text-gold text-3xl mb-4">
+                  <Truck className="h-12 w-12 mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Direct Shipping</h3>
+                <p className="text-green-100">Fast and reliable delivery straight from Forever Living</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/10 backdrop-blur-sm text-center animate-on-scroll">
+              <CardContent className="p-6">
+                <div className="text-gold text-3xl mb-4">
+                  <Headphones className="h-12 w-12 mx-auto" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Personal Support</h3>
+                <p className="text-green-100">Dedicated customer service and wellness consultation</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center animate-on-scroll">
+            <Button 
+              onClick={() => window.open('https://shop.foreverliving.com/rep/your-id', '_blank')}
+              className="bg-gold hover:bg-yellow-500 text-white px-12 py-4 text-xl font-bold transform hover:scale-105 transition-all duration-300 inline-flex items-center"
+            >
+              Visit Full Store & Order Now
+              <ExternalLink className="h-5 w-5 ml-2" />
+            </Button>
+            
+            <p className="text-green-100 mt-4 text-sm flex items-center justify-center">
+              <Shield className="h-4 w-4 mr-1" />
+              Secure ordering, payment, and direct shipping available
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
+              What Our Customers Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real stories from people who have transformed their health with Forever Living Products.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                rating: 5,
+                testimonial: "The Aloe Vera drink has completely transformed my digestive health. I feel more energized and my skin looks amazing!",
+                name: "Sarah M.",
+                title: "Verified Customer",
+                avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+              },
+              {
+                rating: 5,
+                testimonial: "Arctic Sea Omega-3 has been a game-changer for my heart health. My doctor is impressed with my improved numbers!",
+                name: "David R.",
+                title: "Verified Customer",
+                avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+              },
+              {
+                rating: 5,
+                testimonial: "Working with this manager has been incredible. The personal support and product knowledge is outstanding!",
+                name: "Maria L.",
+                title: "Verified Customer",
+                avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+              }
+            ].map((testimonial, index) => (
+              <Card key={index} className="bg-white shadow-lg animate-on-scroll">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="text-gold flex">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-current" />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-gray-700 mb-4 italic">
+                    "{testimonial.testimonial}"
+                  </p>
+                  <div className="flex items-center">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full mr-4 object-cover" 
+                    />
+                    <div>
+                      <h4 className="font-semibold text-forest">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-600">{testimonial.title}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl sm:text-4xl font-bold text-forest mb-6 font-serif">
+              Ready to Start Your Wellness Journey?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Get in touch for personalized wellness consultation and product recommendations.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="animate-on-scroll">
+              <h3 className="text-2xl font-bold text-forest mb-6">Get In Touch</h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-center">
+                  <div className="bg-sage text-white p-3 rounded-full mr-4">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-forest">Email</h4>
+                    <p className="text-gray-600">your-email@example.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="bg-sage text-white p-3 rounded-full mr-4">
+                    <Phone className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-forest">Phone</h4>
+                    <p className="text-gray-600">(555) 123-4567</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="bg-sage text-white p-3 rounded-full mr-4">
+                    <Clock className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-forest">Availability</h4>
+                    <p className="text-gray-600">Monday - Friday: 9AM - 6PM</p>
+                    <p className="text-gray-600">Saturday: 10AM - 4PM</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8">
+                <h4 className="font-semibold text-forest mb-4">Follow Us</h4>
+                <div className="flex space-x-4">
+                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
+                    <Facebook className="h-5 w-5" />
+                  </Button>
+                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
+                    <Instagram className="h-5 w-5" />
+                  </Button>
+                  <Button size="icon" className="bg-sage hover:bg-green-600 text-white">
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+            
+            <div className="animate-on-scroll">
+              <h3 className="text-2xl font-bold text-forest mb-6">Send a Message</h3>
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <Label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    Name
+                  </Label>
+                  <Input
+                    type="text"
+                    id="name"
+                    value={formData.name}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
+                    placeholder="Your Name"
+                    className="focus:ring-sage focus:border-sage"
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email
+                  </Label>
+                  <Input
+                    type="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    placeholder="your.email@example.com"
+                    className="focus:ring-sage focus:border-sage"
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    Phone
+                  </Label>
+                  <Input
+                    type="tel"
+                    id="phone"
+                    value={formData.phone}
+                    onChange={(e) => handleInputChange('phone', e.target.value)}
+                    placeholder="(555) 123-4567"
+                    className="focus:ring-sage focus:border-sage"
+                  />
+                </div>
+                
+                <div>
+                  <Label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
+                    Interest
+                  </Label>
+                  <Select value={formData.interest} onValueChange={(value) => handleInputChange('interest', value)}>
+                    <SelectTrigger className="focus:ring-sage focus:border-sage">
+                      <SelectValue placeholder="Select your interest" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="products">Product Information</SelectItem>
+                      <SelectItem value="consultation">Wellness Consultation</SelectItem>
+                      <SelectItem value="business">Business Opportunity</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                <div>
+                  <Label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Message
+                  </Label>
+                  <Textarea
+                    id="message"
+                    value={formData.message}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    rows={4}
+                    placeholder="Tell us about your wellness goals or questions..."
+                    className="focus:ring-sage focus:border-sage"
+                  />
+                </div>
+                
+                <Button 
+                  type="submit" 
+                  className="w-full bg-sage hover:bg-green-600 text-white transform hover:scale-105 transition-all duration-300"
+                >
+                  Send Message
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-forest text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">
+                FOREVER<sup className="text-xs">®</sup>
+              </h3>
+              <p className="text-green-100 mb-4">
+                Your trusted independent Forever Living Products manager, dedicated to helping you achieve optimal health through nature's finest ingredients.
+              </p>
+              <div className="flex space-x-4">
+                <Button size="icon" variant="ghost" className="text-green-100 hover:text-white">
+                  <Facebook className="h-5 w-5" />
+                </Button>
+                <Button size="icon" variant="ghost" className="text-green-100 hover:text-white">
+                  <Instagram className="h-5 w-5" />
+                </Button>
+                <Button size="icon" variant="ghost" className="text-green-100 hover:text-white">
+                  <Linkedin className="h-5 w-5" />
+                </Button>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button onClick={() => scrollToSection('about')} className="text-green-100 hover:text-white transition-colors">
+                    About
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => scrollToSection('products')} className="text-green-100 hover:text-white transition-colors">
+                    Products
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => scrollToSection('gallery')} className="text-green-100 hover:text-white transition-colors">
+                    Gallery
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => scrollToSection('contact')} className="text-green-100 hover:text-white transition-colors">
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Products</h4>
+              <ul className="space-y-2 text-green-100">
+                <li>Aloe Vera</li>
+                <li>Omega-3</li>
+                <li>Vitamins</li>
+                <li>Skincare</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+              <ul className="space-y-2 text-green-100">
+                <li className="flex items-center">
+                  <Mail className="h-4 w-4 mr-2" />
+                  your-email@example.com
+                </li>
+                <li className="flex items-center">
+                  <Phone className="h-4 w-4 mr-2" />
+                  (555) 123-4567
+                </li>
+                <li className="flex items-center">
+                  <Clock className="h-4 w-4 mr-2" />
+                  Mon-Fri: 9AM-6PM
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-green-700 mt-8 pt-8 text-center">
+            <p className="text-green-100 text-sm">
+              © 2024 Independent Forever Living Products Manager. All rights reserved.
+            </p>
+            <p className="text-green-100 text-xs mt-2">
+              This website is owned and operated by an independent Forever Living Products Business Owner and is not affiliated with Forever Living Products International, Inc.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
