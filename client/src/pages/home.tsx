@@ -288,11 +288,11 @@ export default function Home() {
                   alt="Antonio Marfa - Forever Living Products Manager" 
                   className="rounded-lg shadow-lg w-full h-80 object-cover"
                 />
-                <div className="absolute top-4 right-4">
+                <div className="absolute top-4 left-4">
                   <img 
                     src={recognitionBadge} 
                     alt="Manager Recognition Badge" 
-                    className="w-20 h-20 object-contain"
+                    className="w-16 h-16 object-contain"
                   />
                 </div>
               </div>
