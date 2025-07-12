@@ -244,14 +244,6 @@ export default function Home() {
                 <p className="text-cream text-xs mt-2 text-center font-semibold">👥 Join Our Family</p>
               </div>
             </div>
-            
-            <Button 
-              onClick={() => scrollToSection('about')}
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-forest px-8 py-4 text-lg font-semibold transition-all duration-300"
-            >
-              Learn More
-            </Button>
           </div>
         </div>
       </section>
