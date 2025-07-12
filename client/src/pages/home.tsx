@@ -381,15 +381,15 @@ export default function Home() {
                 className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
               />
               
-
-              
-              <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/CDUSJPbt', '_blank')}
-                className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
-              >
-                🚀 Start Your Journey Today!
-                <ExternalLink className="ml-3 h-6 w-6" />
-              </Button>
+              <div className="flex justify-center">
+                <Button 
+                  onClick={() => window.open('https://thealoeveraco.shop/51mqp', '_blank')}
+                  className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+                >
+                  🚀 Start Your Journey Today!
+                  <ExternalLink className="ml-3 h-6 w-6" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
