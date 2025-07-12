@@ -397,7 +397,7 @@ export default function Home() {
                   src={youtubeChannelImage} 
                   alt="JudeHealthBiz Talk YouTube Channel" 
                   className="rounded-2xl shadow-2xl w-full max-w-4xl h-auto cursor-pointer transform hover:scale-105 transition-all duration-300" 
-                  onClick={() => window.open('https://www.youtube.com/@JudeHealthBizTalk', '_blank')}
+                  onClick={() => window.open('https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA', '_blank')}
                 />
               </div>
             </div>

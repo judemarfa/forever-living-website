@@ -120,4 +120,5 @@ The application serves as a digital storefront for a Forever Living Products man
 - Streamlined page content by removing Featured Products, Product Gallery, testimonials, and footer sections
 - Simplified contact section to display only email address (judemarfa@gmail.com)
 - Centered "Start Your Journey Today!" button and updated link to https://thealoeveraco.shop/51mqp
+- Added YouTube channel image below the button linking to https://www.youtube.com/channel/UCY1yrwk__0cJN6E5qHGGxdA
 - Focused page content on business opportunity with clean ending after business opportunity section
