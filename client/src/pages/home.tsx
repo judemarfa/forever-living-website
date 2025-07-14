@@ -225,17 +225,17 @@ export default function Home() {
         <div className="absolute inset-0 hero-gradient" />
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 font-light animate-fadeInUp leading-relaxed px-2">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 font-light animate-fadeInUp leading-relaxed px-2">
             "A wise man should consider that health is the greatest of human blessings" - Hippocrates
           </p>
           {/* Call to Action */}
           <div className="mb-6 sm:mb-8 animate-fadeInUp">
             <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 animate-pulse mx-2">
-              <p className="text-white text-base sm:text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
-              <p className="text-cream text-sm">Get your premium wellness products now - Click the button below!</p>
+              <p className="text-white text-sm sm:text-base md:text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
+              <p className="text-cream text-xs sm:text-sm">Get your premium wellness products now - Click the button below!</p>
             </div>
           </div>
 
@@ -243,11 +243,11 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full max-w-lg">
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                className="relative bg-gold hover:bg-yellow-500 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle w-full sm:w-auto"
+                className="relative bg-gold hover:bg-yellow-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle w-full sm:w-auto"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Best Seller
-                  <Star className="h-4 w-4 sm:h-5 sm:w-5 ml-2 animate-pulse" />
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 ml-1 sm:ml-2 animate-pulse" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 transition-all duration-700 animate-shimmer" />
@@ -270,7 +270,7 @@ export default function Home() {
                     NEW
                   </div>
                 </div>
-                <p className="text-cream text-xs mt-2 text-center font-semibold">📱 Scan for quick access</p>
+                <p className="text-cream text-xs mt-1 text-center font-semibold">📱 Scan</p>
               </div>
 
               {/* Join Our Forever Family */}
@@ -285,7 +285,7 @@ export default function Home() {
                     className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain" 
                   />
                 </div>
-                <p className="text-cream text-xs mt-2 text-center font-semibold">👥 Join Our Family</p>
+                <p className="text-cream text-xs mt-1 text-center font-semibold">👥 Join</p>
               </div>
             </div>
             
