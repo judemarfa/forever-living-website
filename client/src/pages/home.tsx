@@ -140,7 +140,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             <div className="flex items-center">
               <img 
                 src={firstHealthLogo} 
@@ -215,7 +215,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center pt-16">
+      <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -224,7 +224,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 hero-gradient" />
         
-        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-4 sm:pt-0">
+        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-8 sm:pt-4 md:pt-0">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
