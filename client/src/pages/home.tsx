@@ -35,8 +35,8 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
-// Using public directory for better asset serving
-const healthRegenerationLogo = "/logo.png";
+// Using public directory for better asset serving with cache busting
+const healthRegenerationLogo = "/health-logo.png?v=" + Date.now();
 
 // Fallback SVG version if image doesn't load
 const LogoSVG = () => (
