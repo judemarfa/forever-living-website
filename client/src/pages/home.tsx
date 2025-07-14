@@ -225,9 +225,11 @@ export default function Home() {
         <div className="absolute inset-0 hero-gradient" />
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 animate-fadeInUp">
-            Health is the <span className="text-gold">First</span> Wealth
-          </h1>
+          <div className="mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-white animate-fadeInUp">
+              Health is the <span className="text-gold">First</span> Wealth
+            </h1>
+          </div>
           {/* Call to Action */}
           <div className="mb-8 animate-fadeInUp">
             <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-4 mb-6 animate-pulse">
