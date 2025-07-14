@@ -225,12 +225,9 @@ export default function Home() {
         <div className="absolute inset-0 hero-gradient" />
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 animate-fadeInUp">
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
-          <p className="text-xl sm:text-2xl mb-8 font-light animate-fadeInUp">
-            "A wise man should consider that health is the greatest of human blessings" - Hippocrates
-          </p>
           {/* Call to Action */}
           <div className="mb-8 animate-fadeInUp">
             <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-4 mb-6 animate-pulse">
