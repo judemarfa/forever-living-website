@@ -215,7 +215,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen">
+      <section id="home" className="relative min-h-screen pt-20 pb-8">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -224,28 +224,28 @@ export default function Home() {
         />
         <div className="absolute inset-0 hero-gradient" />
         
-        <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white max-w-4xl mx-auto mt-20 sm:mt-16 md:mt-0">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
-            Health is the <span className="text-gold">First</span> Wealth
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 font-light animate-fadeInUp leading-relaxed px-2">
-            "A wise man should consider that health is the greatest of human blessings" - Hippocrates
-          </p>
-          {/* Call to Action */}
-          <div className="mb-6 sm:mb-8 animate-fadeInUp">
-            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 animate-pulse mx-2">
-              <p className="text-white text-sm sm:text-base md:text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
-              <p className="text-cream text-xs sm:text-sm">Get your premium wellness products now - Click the button below!</p>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white max-w-4xl mx-auto w-full">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
+              Health is the <span className="text-gold">First</span> Wealth
+            </h1>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 font-light animate-fadeInUp leading-relaxed px-2">
+              "A wise man should consider that health is the greatest of human blessings" - Hippocrates
+            </p>
+            {/* Call to Action */}
+            <div className="mb-6 sm:mb-8 animate-fadeInUp">
+              <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 animate-pulse mx-2">
+                <p className="text-white text-sm sm:text-base md:text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
+                <p className="text-cream text-xs sm:text-sm">Get your premium wellness products now - Click the button below!</p>
+              </div>
             </div>
-          </div>
 
-          <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center animate-fadeInUp">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full max-w-lg">
-              <Button 
-                onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                className="relative bg-gold hover:bg-yellow-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle w-full sm:w-auto"
-              >
+            <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center animate-fadeInUp">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full max-w-lg">
+                <Button 
+                  onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
+                  className="relative bg-gold hover:bg-yellow-500 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle w-full sm:w-auto"
+                >
                 <span className="relative z-10 flex items-center justify-center">
                   Best Seller
                   <Star className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 ml-1 sm:ml-2 animate-pulse" />
