@@ -35,7 +35,8 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
-import healthRegenerationLogo from "@/assets/health-regeneration-logo.png";
+// Using public directory for better asset serving
+const healthRegenerationLogo = "/logo.png";
 import recognitionBadge from "@/assets/recognition-badge.png";
 import foreverOpportunityImage from "@/assets/forever-opportunity.png";
 import businessBenefitsImage from "@/assets/business-benefits.png";
