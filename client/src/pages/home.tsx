@@ -215,7 +215,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen pt-20 sm:pt-16 md:pt-0 md:flex md:items-center md:justify-center">
+      <section id="home" className="relative min-h-screen">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -224,7 +224,8 @@ export default function Home() {
         />
         <div className="absolute inset-0 hero-gradient" />
         
-        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-8 md:pt-0">
+        <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-white max-w-4xl mx-auto mt-20 sm:mt-16 md:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
@@ -308,6 +309,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+          </div>
       </section>
 
       {/* About Section */}
