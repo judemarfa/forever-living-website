@@ -142,11 +142,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <img 
-                src={healthRegenerationLogo} 
-                alt="Health Regeneration Timeline" 
-                className="h-12 w-12"
-              />
+              <div className="border-4 border-yellow-500 rounded-lg p-1">
+                <img 
+                  src={healthRegenerationLogo} 
+                  alt="Health Regeneration Timeline" 
+                  className="h-12 w-12 rounded-md"
+                />
+              </div>
             </div>
             
             {/* Desktop Navigation */}
