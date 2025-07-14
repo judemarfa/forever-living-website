@@ -35,7 +35,7 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
-import firstHealthLogo from "@/assets/1st-health-logo.svg";
+import healthRegenerationLogo from "@/assets/health-regeneration-logo.svg";
 import recognitionBadge from "@/assets/recognition-badge.png";
 import foreverOpportunityImage from "@/assets/forever-opportunity.png";
 import businessBenefitsImage from "@/assets/business-benefits.png";
@@ -142,7 +142,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              {/* Logo completely removed - force refresh */}
+              <img 
+                src={healthRegenerationLogo} 
+                alt="Health Regeneration Timeline" 
+                className="h-12 w-12"
+              />
             </div>
             
             {/* Desktop Navigation */}
