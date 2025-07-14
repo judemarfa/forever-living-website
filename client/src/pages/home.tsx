@@ -37,6 +37,30 @@ import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
 // Using public directory for better asset serving
 const healthRegenerationLogo = "/logo.png";
+
+// Fallback SVG version if image doesn't load
+const LogoSVG = () => (
+  <svg viewBox="0 0 100 100" className="hexagon-image">
+    <defs>
+      <clipPath id="hexagon-clip">
+        <polygon points="25,0 75,0 100,50 75,100 25,100 0,50" />
+      </clipPath>
+    </defs>
+    <rect width="100" height="100" fill="#1E5631" clipPath="url(#hexagon-clip)" />
+    <circle cx="50" cy="20" r="8" fill="#FF6B6B" />
+    <text x="50" y="32" fontSize="6" fill="white" textAnchor="middle">BRAIN</text>
+    <circle cx="25" cy="40" r="6" fill="#4ECDC4" />
+    <text x="25" y="50" fontSize="4" fill="white" textAnchor="middle">LUNGS</text>
+    <circle cx="75" cy="40" r="6" fill="#FFE66D" />
+    <text x="75" y="50" fontSize="4" fill="white" textAnchor="middle">LIVER</text>
+    <circle cx="25" cy="70" r="6" fill="#FF6B6B" />
+    <text x="25" y="80" fontSize="4" fill="white" textAnchor="middle">BLOOD</text>
+    <circle cx="75" cy="70" r="6" fill="#4ECDC4" />
+    <text x="75" y="80" fontSize="4" fill="white" textAnchor="middle">SKIN</text>
+    <circle cx="50" cy="85" r="6" fill="#FFE66D" />
+    <text x="50" y="95" fontSize="4" fill="white" textAnchor="middle">BONES</text>
+  </svg>
+);
 import recognitionBadge from "@/assets/recognition-badge.png";
 import foreverOpportunityImage from "@/assets/forever-opportunity.png";
 import businessBenefitsImage from "@/assets/business-benefits.png";
@@ -149,7 +173,15 @@ export default function Home() {
                     src={healthRegenerationLogo} 
                     alt="Health Regeneration Timeline" 
                     className="hexagon-image"
+                    onError={(e) => {
+                      // Fallback to SVG if image fails to load
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                    }}
                   />
+                  <div className="hidden">
+                    <LogoSVG />
+                  </div>
                 </div>
               </div>
             </div>
