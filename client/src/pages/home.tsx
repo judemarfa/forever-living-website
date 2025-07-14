@@ -225,29 +225,29 @@ export default function Home() {
         <div className="absolute inset-0 hero-gradient" />
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp leading-tight">
             Health is the <span className="text-gold">First</span> Wealth
           </h1>
-          <p className="text-xl sm:text-2xl mb-8 font-light animate-fadeInUp">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 font-light animate-fadeInUp leading-relaxed px-2">
             "A wise man should consider that health is the greatest of human blessings" - Hippocrates
           </p>
           {/* Call to Action */}
-          <div className="mb-8 animate-fadeInUp">
-            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-4 mb-6 animate-pulse">
-              <p className="text-white text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
+          <div className="mb-6 sm:mb-8 animate-fadeInUp">
+            <div className="bg-coral/20 backdrop-blur-sm border border-coral/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 animate-pulse mx-2">
+              <p className="text-white text-base sm:text-lg font-semibold mb-2">🔥 15% discount on all orders</p>
               <p className="text-cream text-sm">Get your premium wellness products now - Click the button below!</p>
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-6 justify-center items-center animate-fadeInUp">
-            <div className="flex flex-col sm:flex-row gap-4 items-center">
+          <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center animate-fadeInUp">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full max-w-lg">
               <Button 
                 onClick={() => window.open('https://thealoeveraco.shop/p9UXGNcC', '_blank')}
-                className="relative bg-gold hover:bg-yellow-500 text-white px-8 py-4 text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle"
+                className="relative bg-gold hover:bg-yellow-500 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 group animate-glow animate-bounce-subtle w-full sm:w-auto"
               >
-                <span className="relative z-10 flex items-center">
+                <span className="relative z-10 flex items-center justify-center">
                   Best Seller
-                  <Star className="h-5 w-5 ml-2 animate-pulse" />
+                  <Star className="h-4 w-4 sm:h-5 sm:w-5 ml-2 animate-pulse" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transform -skew-x-12 transition-all duration-700 animate-shimmer" />
@@ -263,10 +263,10 @@ export default function Home() {
                     <img 
                       src={qrCodeImage} 
                       alt="QR Code to Best Seller Products" 
-                      className="w-16 h-16 sm:w-20 sm:h-20" 
+                      className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20" 
                     />
                   </div>
-                  <div className="absolute -top-1 -right-1 bg-coral text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                  <div className="absolute -top-1 -right-1 bg-coral text-white text-xs px-1.5 py-0.5 rounded-full animate-pulse">
                     NEW
                   </div>
                 </div>
@@ -282,10 +282,28 @@ export default function Home() {
                   <img 
                     src={joinFamilyImage} 
                     alt="Join Our Forever Family" 
-                    className="w-16 h-16 sm:w-20 sm:h-20 object-contain" 
+                    className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain" 
                   />
                 </div>
                 <p className="text-cream text-xs mt-2 text-center font-semibold">👥 Join Our Family</p>
+              </div>
+            </div>
+            
+            {/* Mobile-friendly spacing */}
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center mt-4 sm:mt-0">
+              <div className="flex gap-2 sm:gap-4 items-center">
+                <div className="flex flex-col items-center">
+                  <div className="w-2 h-2 bg-gold rounded-full animate-pulse"></div>
+                  <p className="text-cream text-xs mt-1">Quick</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2 h-2 bg-coral rounded-full animate-pulse"></div>
+                  <p className="text-cream text-xs mt-1">Easy</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-2 h-2 bg-sage rounded-full animate-pulse"></div>
+                  <p className="text-cream text-xs mt-1">Secure</p>
+                </div>
               </div>
             </div>
           </div>
@@ -293,9 +311,9 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-cream">
+      <section id="about" className="py-12 sm:py-16 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
             <div className="animate-on-scroll">
               {/* Carousel Gallery */}
               <div className="relative mb-8 bg-gradient-to-br from-sage/20 to-gold/20 p-4 rounded-2xl shadow-xl border-2 border-gold/30">
@@ -352,20 +370,20 @@ export default function Home() {
               </div>
               
               {/* Content below presentation image */}
-              <div className="bg-gradient-to-br from-gold/20 to-coral/20 p-8 rounded-2xl shadow-xl border-2 border-gold/30">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6 font-serif bg-gradient-to-r from-forest via-sage to-gold bg-clip-text text-transparent">
+              <div className="bg-gradient-to-br from-gold/20 to-coral/20 p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl border-2 border-gold/30">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 font-serif bg-gradient-to-r from-forest via-sage to-gold bg-clip-text text-transparent">
                   Your Trusted Wellness Partner
                 </h2>
                 
-                <p className="text-xl mb-6 leading-relaxed font-semibold">
-                  As a <span className="text-coral font-bold text-2xl">manager-ranked independent agent</span> with Forever Living Products, 
+                <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6 leading-relaxed font-semibold">
+                  As a <span className="text-coral font-bold text-lg sm:text-xl lg:text-2xl">manager-ranked independent agent</span> with Forever Living Products, 
                   I've dedicated my career to helping others achieve <span className="text-forest font-bold">optimal wellness</span> through 
-                  nature's most powerful ingredients and also <span className="text-gold font-bold text-xl">build a business</span>.
+                  nature's most powerful ingredients and also <span className="text-gold font-bold text-lg sm:text-xl">build a business</span>.
                 </p>
                 
-                <p className="text-lg leading-relaxed font-semibold text-sage mb-4">
-                  Have the <span className="text-coral font-bold text-xl">freedom</span> to make your own schedule, 
-                  work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-xl">desire</span>.
+                <p className="text-sm sm:text-base lg:text-lg leading-relaxed font-semibold text-sage mb-4">
+                  Have the <span className="text-coral font-bold text-base sm:text-lg lg:text-xl">freedom</span> to make your own schedule, 
+                  work from <span className="text-forest font-bold">anywhere</span> and achieve what you <span className="text-gold font-bold text-base sm:text-lg lg:text-xl">desire</span>.
                 </p>
               </div>
             </div>
@@ -383,13 +401,13 @@ export default function Home() {
                 className="rounded-2xl shadow-2xl w-full h-auto mb-8" 
               />
               
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-6 sm:mb-8 px-4">
                 <Button 
                   onClick={() => window.open('https://thealoeveraco.shop/51mqp', '_blank')}
-                  className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+                  className="bg-gradient-to-r from-forest via-sage to-gold hover:from-gold hover:to-coral text-white font-bold px-6 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6 text-base sm:text-lg lg:text-xl rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-pulse w-full max-w-sm sm:max-w-md lg:max-w-lg"
                 >
                   🚀 Start Your Journey Today!
-                  <ExternalLink className="ml-3 h-6 w-6" />
+                  <ExternalLink className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6" />
                 </Button>
               </div>
               
@@ -412,11 +430,11 @@ export default function Home() {
                   </div>
                   
                   {/* Informational text below the image */}
-                  <div className="text-center mt-4">
-                    <p className="text-lg font-semibold text-gray-800 mb-2">
+                  <div className="text-center mt-4 px-4">
+                    <p className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
                       🎥 Watch Educational Health & Wellness Videos
                     </p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm sm:text-base text-gray-600">
                       Click the image above to visit our YouTube channel for valuable health tips and product insights
                     </p>
                   </div>
@@ -428,16 +446,16 @@ export default function Home() {
       </section>
 
       {/* Footer - visible on Contact tab */}
-      <footer id="contact" className="bg-gray-900 py-12">
+      <footer id="contact" className="bg-gray-900 py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex items-center justify-center mb-6">
-              <Mail className="h-8 w-8 text-green-400 mr-4" />
-              <span className="text-white text-2xl font-bold">
+            <div className="flex flex-col sm:flex-row items-center justify-center mb-4 sm:mb-6 gap-2 sm:gap-4">
+              <Mail className="h-6 w-6 sm:h-8 sm:w-8 text-green-400" />
+              <span className="text-white text-lg sm:text-xl lg:text-2xl font-bold break-all">
                 judemarfa@gmail.com
               </span>
             </div>
-            <p className="text-green-400 text-lg font-semibold">
+            <p className="text-green-400 text-base sm:text-lg font-semibold px-4">
               Ready to start your wellness journey? Contact us today!
             </p>
           </div>
