@@ -167,21 +167,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="relative">
-                <div className="hexagon-border">
-                  <img 
-                    src={healthRegenerationLogo} 
-                    alt="Health Regeneration Timeline" 
-                    className="hexagon-image"
-                    onError={(e) => {
-                      // Fallback to SVG if image fails to load
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                    }}
-                  />
-                  <div className="hidden">
-                    <LogoSVG />
-                  </div>
+              <div className="flex items-center">
+                <img 
+                  src={healthRegenerationLogo} 
+                  alt="Health Regeneration Timeline" 
+                  className="h-12 w-12 object-contain"
+                  onError={(e) => {
+                    // Fallback to SVG if image fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                  }}
+                />
+                <div className="hidden">
+                  <LogoSVG />
                 </div>
               </div>
             </div>
