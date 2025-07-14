@@ -127,5 +127,4 @@ The application serves as a digital storefront for a Forever Living Products man
 - Added footer section with email address (judemarfa@gmail.com) for Contact tab access
 - Fixed Contact tab navigation by adding id="contact" to footer section
 - Final footer design with non-clickable email address (judemarfa@gmail.com) for easy copy/paste functionality
-- Removed Hippocrates quote from header to improve desktop and mobile display
 - Focused page content on business opportunity with clean ending after business opportunity section
