@@ -462,6 +462,314 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Wellness Guide Section */}
+      <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-green-700 mb-4">
+              🌿 Natural Wellness Guide
+            </h2>
+            <p className="text-xl text-gray-700 italic">
+              Created and curated by judemarfa — Wellness Advocate
+            </p>
+          </div>
+
+          <div className="bg-green-100 border-l-6 border-green-500 p-6 mb-8 rounded-lg">
+            <p className="text-green-800 italic text-lg">
+              "An apple a day has evolved into so many wellness supplements — what we eat today can positively impact our wellness tomorrow."
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Section 1: Gut Health & Detox */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-green-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  🌱 Gut Health & Detox
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-green-700">Aloe Vera Gel Drink</h4>
+                    <p className="text-sm text-gray-600">4–6 oz daily</p>
+                    <p className="text-sm">Supports digestion, detox, and absorption</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-green-700">Green Food Tablets</h4>
+                    <p className="text-sm text-gray-600">3–6 tablets daily</p>
+                    <p className="text-sm">Alkalizes gut, nourishes microbiome</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-green-700">Garlic-Thyme Softgels</h4>
+                    <p className="text-sm text-gray-600">4 softgels daily</p>
+                    <p className="text-sm">Natural antimicrobial for gut flora</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-green-700">Probiotic-rich foods</h4>
+                    <p className="text-sm text-gray-600">Daily</p>
+                    <p className="text-sm">Restores beneficial bacteria and enzymes</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-green-700">Hydration (Water)</h4>
+                    <p className="text-sm text-gray-600">8–10 glasses daily</p>
+                    <p className="text-sm">Flushes toxins and enhances absorption</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 2: Cardiovascular Support */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-red-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  ❤️ Cardiovascular Support
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-red-700">Arctic Sea (Omega-3)</h4>
+                    <p className="text-sm text-gray-600">6 softgels daily</p>
+                    <p className="text-sm">Improves circulation and reduces inflammation</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-red-700">Garlic-Thyme Softgels</h4>
+                    <p className="text-sm text-gray-600">4 softgels daily</p>
+                    <p className="text-sm">Natural blood conditioner and antioxidant</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-red-700">Forever ARGI+ Drink</h4>
+                    <p className="text-sm text-gray-600">1 sachet daily</p>
+                    <p className="text-sm">Supports vasodilation via nitric oxide production</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 3: Immune Support */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-blue-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  🛡️ Immune Support
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-blue-700">Bee Propolis Tablets</h4>
+                    <p className="text-sm text-gray-600">2 daily</p>
+                    <p className="text-sm">Natural antibiotic and immune regulator</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-blue-700">Garlic-Thyme Softgels</h4>
+                    <p className="text-sm text-gray-600">4 softgels daily</p>
+                    <p className="text-sm">Antiviral and antimicrobial properties</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-blue-700">Vitamin C (Buffered)</h4>
+                    <p className="text-sm text-gray-600">3 tablets daily</p>
+                    <p className="text-sm">Cellular defense and antioxidant action</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-blue-700">Royal Jelly Tablets</h4>
+                    <p className="text-sm text-gray-600">2 tablets daily</p>
+                    <p className="text-sm">Enzyme-rich, supports immunity</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-700">Green Food Tablets</h4>
+                    <p className="text-sm text-gray-600">6 tablets daily</p>
+                    <p className="text-sm">Alkalizing support and phytonutrients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 4: Joint, Muscle & Pain Relief */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-orange-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  🦴 Joint & Pain Relief
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-orange-700">MSM Tablets</h4>
+                    <p className="text-sm text-gray-600">2 tablets twice daily</p>
+                    <p className="text-sm">Supports joints and connective tissue</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-orange-700">Forever Freedom Drink</h4>
+                    <p className="text-sm text-gray-600">4 oz daily</p>
+                    <p className="text-sm">Glucosamine, Chondroitin, MSM blend</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-orange-700">Aloe Vera Gel</h4>
+                    <p className="text-sm text-gray-600">6 oz daily</p>
+                    <p className="text-sm">Reduces inflammation and enhances absorption</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-orange-700">Nature-Min Tablets</h4>
+                    <p className="text-sm text-gray-600">6 tablets daily</p>
+                    <p className="text-sm">Provides minerals for bones and muscles</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-orange-700">Vitamin C (Buffered)</h4>
+                    <p className="text-sm text-gray-600">3 tablets daily</p>
+                    <p className="text-sm">Collagen support and antioxidant action</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 5: Respiratory & Allergy Support */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-teal-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  🫁 Respiratory Support
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-teal-700">Aloe Vera Gel Drink</h4>
+                    <p className="text-sm text-gray-600">4–6 oz daily</p>
+                    <p className="text-sm">Soothes mucous membranes and clears airways</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-teal-700">Bee Propolis Tablets</h4>
+                    <p className="text-sm text-gray-600">2 daily</p>
+                    <p className="text-sm">Natural antibiotic and immune modulator</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-teal-700">Vitamin C (Buffered)</h4>
+                    <p className="text-sm text-gray-600">3 tablets daily</p>
+                    <p className="text-sm">Antihistamine action and tissue repair</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-teal-700">Garlic-Thyme Softgels</h4>
+                    <p className="text-sm text-gray-600">4 softgels daily</p>
+                    <p className="text-sm">Antimicrobial and breathing aid</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-teal-700">Forever Breathe Oil</h4>
+                    <p className="text-sm text-gray-600">Diffuse or topical</p>
+                    <p className="text-sm">Opens airways and refreshes breathing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section 6: Mood, Sleep & Energy */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-purple-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  😴 Mood, Sleep & Energy
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="space-y-4">
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-purple-700">Bee Pollen Tablets</h4>
+                    <p className="text-sm text-gray-600">2–3 daily</p>
+                    <p className="text-sm">Boosts energy and alertness</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-purple-700">Gin-Chia Tablets</h4>
+                    <p className="text-sm text-gray-600">3 daily</p>
+                    <p className="text-sm">Stamina and adrenal balance</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-purple-700">Royal Jelly Tablets</h4>
+                    <p className="text-sm text-gray-600">2 daily</p>
+                    <p className="text-sm">Nourishes brain and emotional balance</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-purple-700">Forever Calcium</h4>
+                    <p className="text-sm text-gray-600">6 tablets daily</p>
+                    <p className="text-sm">Supports restful sleep and nerve relaxation</p>
+                  </div>
+                  <div className="border-b pb-3">
+                    <h4 className="font-semibold text-purple-700">Aloe Vera Gel Drink</h4>
+                    <p className="text-sm text-gray-600">4 oz nightly</p>
+                    <p className="text-sm">Calms digestion and aids rest</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-purple-700">Breathing & Stretching</h4>
+                    <p className="text-sm text-gray-600">10 min daily</p>
+                    <p className="text-sm">Reduces cortisol and improves clarity</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section 7: Longevity & Preventive Wellness */}
+          <div className="mt-8">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto">
+              <div className="bg-yellow-600 text-white p-4">
+                <h3 className="text-xl font-bold flex items-center gap-2">
+                  🌟 Longevity & Preventive Wellness
+                </h3>
+              </div>
+              <div className="p-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="border-b pb-3">
+                      <h4 className="font-semibold text-yellow-700">Nature-Min Tablets</h4>
+                      <p className="text-sm text-gray-600">6 tablets daily</p>
+                      <p className="text-sm">Broad mineral support for bones, cells, and organs</p>
+                    </div>
+                    <div className="border-b pb-3">
+                      <h4 className="font-semibold text-yellow-700">Vitamin C (Buffered)</h4>
+                      <p className="text-sm text-gray-600">3 tablets daily</p>
+                      <p className="text-sm">Antioxidant for immune and collagen repair</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-yellow-700">Royal Jelly Tablets</h4>
+                      <p className="text-sm text-gray-600">2 tablets daily</p>
+                      <p className="text-sm">Vital enzymes and cellular longevity</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="border-b pb-3">
+                      <h4 className="font-semibold text-yellow-700">Forever B12 Plus</h4>
+                      <p className="text-sm text-gray-600">2 tablets daily</p>
+                      <p className="text-sm">Supports energy and red blood cell formation</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-yellow-700">Gin-Chia Tablets</h4>
+                      <p className="text-sm text-gray-600">3 tablets daily</p>
+                      <p className="text-sm">Adaptogen for stress and hormonal balance</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Final Inspirational Message */}
+          <div className="mt-8 bg-gradient-to-r from-green-100 to-blue-100 border-l-6 border-green-500 p-8 rounded-lg">
+            <p className="text-green-800 italic text-lg leading-relaxed">
+              "As you enjoy better sleep, breath, and mobility — know this: these products offer more than personal relief. 
+              They're a gateway to helping others rediscover wellness — physically and financially. 
+              Daily use becomes daily opportunity. 
+              Share your story. Share your guide. Watch your impact multiply."
+            </p>
+          </div>
+
+          {/* Disclaimer */}
+          <div className="mt-8 bg-gray-100 p-6 rounded-lg">
+            <p className="text-sm text-gray-700">
+              <strong>Disclaimer:</strong> These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA). 
+              This guide is not intended to diagnose, treat, cure, or prevent any disease. 
+              If you are experiencing health concerns, please consult a licensed medical doctor.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer - visible on Contact tab */}
       <footer id="contact" className="bg-gray-900 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

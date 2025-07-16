@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <title>Natural Wellness Guide by judemarfa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fdfb;
+      color: #2c3e50;
+      padding: 40px;
+    }
+    h1, h2 {
+      color: #27ae60;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h1 img {
+      height: 36px;
+      vertical-align: middle;
+    }
+    h2 img {
+      height: 24px;
+      vertical-align: middle;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #2d3436;
+      margin-bottom: 8px;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #d5f5e3;
+    }
+    .top-note {
+      font-size: 0.9em;
+      color: #7f8c8d;
+      margin: 40px 0 10px;
+    }
+    .quote {
+      background-color: #eafaf1;
+      border-left: 6px solid #2ecc71;
+      padding: 15px;
+      font-style: italic;
+      margin: 30px 0;
+    }
+    footer {
+      font-size: 0.85em;
+      color: #7f8c8d;
+      margin-top: 30px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    <img src="logo.png" alt="Wellness Logo">
+    Natural Wellness Guide
+  </h1>
+
+  <p style="text-align:center; font-size:1.1em;">
+    <em>Created and curated by judemarfa — Wellness Advocate</em>
+  </p>
+
+  <div class="quote">
+    “An apple a day has evolved into so many wellness supplements — what we eat today can positively impact our wellness tomorrow.”
+  </div>
+
+  <!-- Section 1 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 1: Gut Health & Detox</h2>
+  <table>
+    <caption>Gut Health & Detox Remedies</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Aloe Vera Gel Drink</td><td>4–6 oz daily</td><td>Supports digestion, detox, and absorption</td></tr>
+      <tr><td>Green Food Tablets</td><td>3–6 tablets daily</td><td>Alkalizes gut, nourishes microbiome</td></tr>
+      <tr><td>Garlic-Thyme Softgels</td><td>4 softgels daily</td><td>Natural antimicrobial for gut flora</td></tr>
+      <tr><td>Probiotic-rich foods</td><td>Daily</td><td>Restores beneficial bacteria and enzymes</td></tr>
+      <tr><td>Hydration (Water)</td><td>8–10 glasses daily</td><td>Flushes toxins and enhances absorption</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 2 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 2: Cardiovascular Support</h2>
+  <table>
+    <caption>Heart & Circulation Support</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Arctic Sea (Omega-3)</td><td>6 softgels daily</td><td>Improves circulation and reduces inflammation</td></tr>
+      <tr><td>Garlic-Thyme Softgels</td><td>4 softgels daily</td><td>Natural blood conditioner and antioxidant</td></tr>
+      <tr><td>Forever ARGI+ Drink</td><td>1 sachet daily</td><td>Supports vasodilation via nitric oxide production</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 3 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 3: Immune Support</h2>
+  <table>
+    <caption>Immune Boosting Remedies</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Bee Propolis Tablets</td><td>2 daily</td><td>Natural antibiotic and immune regulator</td></tr>
+      <tr><td>Garlic-Thyme Softgels</td><td>4 softgels daily</td><td>Antiviral and antimicrobial properties</td></tr>
+      <tr><td>Vitamin C (Buffered)</td><td>3 tablets daily</td><td>Cellular defense and antioxidant action</td></tr>
+      <tr><td>Royal Jelly Tablets</td><td>2 tablets daily</td><td>Enzyme-rich, supports immunity</td></tr>
+      <tr><td>Green Food Tablets</td><td>6 tablets daily</td><td>Alkalizing support and phytonutrients</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 4 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 4: Joint, Muscle & Pain Relief</h2>
+  <table>
+    <caption>Pain Relief & Mobility Support</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MSM Tablets</td><td>2 tablets twice daily</td><td>Supports joints and connective tissue</td></tr>
+      <tr><td>Forever Freedom Drink</td><td>4 oz daily</td><td>Glucosamine, Chondroitin, MSM blend</td></tr>
+      <tr><td>Aloe Vera Gel</td><td>6 oz daily</td><td>Reduces inflammation and enhances absorption</td></tr>
+      <tr><td>Nature-Min Tablets</td><td>6 tablets daily</td><td>Provides minerals for bones and muscles</td></tr>
+      <tr><td>Vitamin C (Buffered)</td><td>3 tablets daily</td><td>Collagen support and antioxidant action</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 5 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 5: Respiratory & Allergy Support</h2>
+  <table>
+    <caption>Breath & Sinus Relief</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Aloe Vera Gel Drink</td><td>4–6 oz daily</td><td>Soothes mucous membranes and clears airways</td></tr>
+      <tr><td>Bee Propolis Tablets</td><td>2 daily</td><td>Natural antibiotic and immune modulator</td></tr>
+      <tr><td>Vitamin C (Buffered)</td><td>3 tablets daily</td><td>Antihistamine action and tissue repair</td></tr>
+      <tr><td>Garlic-Thyme Softgels</td><td>4 softgels daily</td><td>Antimicrobial and breathing aid</td></tr>
+      <tr><td>Forever Breathe Oil</td><td>Diffuse or topical</td><td>Opens airways and refreshes breathing</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 6 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 6: Mood, Sleep & Energy</h2>
+  <table>
+    <caption>Emotional & Physical Vitality</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Bee Pollen Tablets</td><td>2–3 daily</td><td>Boosts energy and alertness</td></tr>
+      <tr><td>Gin-Chia Tablets</td><td>3 daily</td><td>Stamina and adrenal balance</td></tr>
+      <tr><td>Royal Jelly Tablets</td><td>2 daily</td><td>Nourishes brain and emotional balance</td></tr>
+      <tr><td>Forever Calcium</td><td>6 tablets daily</td><td>Supports restful sleep and nerve relaxation</td></tr>
+      <tr><td>Aloe Vera Gel Drink</td><td>4 oz nightly</td><td>Calms digestion and aids rest</td></tr>
+      <tr><td>Breathing & Stretching</td><td>10 min daily</td><td>Reduces cortisol and improves clarity</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Section 7 -->
+  <p class="top-note"><strong>Note:</strong> The following section contains suggested food-based remedies. These are not medications and should not replace professional medical advice or treatment.</p>
+  <h2><img src="logo.png" alt="Section Icon"> Section 7: Longevity & Preventive Wellness</h2>
+  <table>
+    <caption>Long-Term Vitality Support</caption>
+    <thead>
+      <tr><th>Supplement / Ingredient</th><th>Suggested Use</th><th>Benefit / Function</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nature-Min Tablets</td><td>6 tablets daily</td><td>Broad mineral support for bones, cells, and organs</td></tr>
+      <tr><td>Vitamin C (Buffered)</td><td>3 tablets daily</td><td>Antioxidant for immune and collagen repair</td></tr>
+      <tr><td>Royal Jelly Tablets</td><td>2 tablets daily</td><td>Vital enzymes and cellular longevity</td></tr>
+      <tr><td>Forever B12 Plus</td><td>2 tablets daily</td><td>Supports energy and red blood cell formation</td></tr>
+      <tr><td>Gin-Chia Tablets</td><td>3 tablets daily</td><td>Adaptogen for stress and hormonal balance</td></tr>
+    </tbody>
+  </table>
+  <footer>
+    Disclaimer: These supplements and remedies are intended as food-based support only and have not been evaluated by the U.S. Food and Drug Administration (FDA).  
+    This guide is not intended to diagnose, treat, cure, or prevent any disease.  
+    If you are experiencing health concerns, please consult a licensed medical doctor.
+  </footer>
+
+  <!-- Final Message -->
+  <p class="top-note"><strong>Note:</strong> The following message is shared for inspiration only and does not contain medical or financial advice.</p>
+  <div class="quote">
+    “As you enjoy better sleep, breath, and mobility — know this: these products offer more than personal relief.  
+    They’re a gateway to helping others rediscover wellness — physically and financially.  
+    Daily use becomes daily opportunity.  
+    Share your story. Share your guide. Watch your impact multiply.”
+  </div>
+
+</body>
+</html>
