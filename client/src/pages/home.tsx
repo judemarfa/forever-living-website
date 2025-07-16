@@ -35,6 +35,7 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
+import applePillSupplements from "@/assets/applePillSupplements_1752674835890.png";
 // Using public directory for better asset serving with cache busting
 const healthRegenerationLogo = "/health-logo.png?v=" + Date.now();
 
@@ -466,6 +467,14 @@ export default function Home() {
       <section className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <div className="flex justify-center mb-8">
+              <img 
+                src={applePillSupplements} 
+                alt="Natural wellness supplements - apple and pills representing health transformation" 
+                className="max-w-full h-auto rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+                style={{ maxHeight: '400px' }}
+              />
+            </div>
             <h1 className="text-4xl font-bold text-green-700 mb-4 flex items-center justify-center gap-3">
               <span className="text-3xl">🌿</span>
               Natural Wellness Guide
