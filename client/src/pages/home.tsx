@@ -35,7 +35,7 @@ import {
 import qrCodeImage from "@/assets/qr-code.png";
 import joinFamilyImage from "@/assets/join-family.png";
 import antonioMarfaImage from "@/assets/antonio-marfa-professional.png";
-import applePillSupplements from "@/assets/applePillSupplements_1752674835890.png";
+import applePillSupplements from "@assets/applePillSupplements_1752674835890.png";
 // Using public directory for better asset serving with cache busting
 const healthRegenerationLogo = "/health-logo.png?v=" + Date.now();
 
