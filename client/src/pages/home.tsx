@@ -165,25 +165,14 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex items-center">
-                <img 
-                  src={healthRegenerationLogo} 
-                  alt="Health Regeneration Timeline" 
-                  className="h-12 w-12 object-contain"
-                  onError={(e) => {
-                    // Fallback to SVG if image fails to load
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                  }}
-                />
-                <div className="hidden">
-                  <LogoSVG />
-                </div>
-              </div>
-            </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <h1 className="text-2xl font-bold text-emerald-600 tracking-wide">
+              AloeVeraVitaPlus-USA
+            </h1>
+          </div>
+          
             
             {/* Desktop Navigation */}
             <div className="hidden md:block">
